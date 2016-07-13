@@ -1,0 +1,1487 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-jade',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /Users/vivianntunell/Desktop/StartKit/package.json
+5 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/body-parser/package.json
+6 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/bower/package.json
+7 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/cookie-parser/package.json
+8 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/debug/package.json
+9 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/express/package.json
+10 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt/package.json
+11 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-concat/package.json
+12 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-watch/package.json
+13 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-jade/package.json
+14 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/jade/package.json
+15 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/morgan/package.json
+16 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/node-sass-middleware/package.json
+17 verbose installManyTop reading scoped package data from /Users/vivianntunell/Desktop/StartKit/node_modules/serve-favicon/package.json
+18 info package.json grunt-jade@0.5.1 No license field.
+19 info package.json node-sass-middleware@0.8.0 No license field.
+20 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/package.json
+21 silly cache add args [ 'grunt-contrib-jade', null ]
+22 verbose cache add spec grunt-contrib-jade
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'grunt-contrib-jade',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'grunt-contrib-jade',
+23 silly cache add   rawSpec: '',
+23 silly cache add   spec: 'latest',
+23 silly cache add   type: 'tag' }
+24 silly addNamed grunt-contrib-jade@latest
+25 verbose addNamed "latest" is being treated as a dist-tag for grunt-contrib-jade
+26 info addNameTag [ 'grunt-contrib-jade', 'latest' ]
+27 silly mapToRegistry name grunt-contrib-jade
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'grunt-contrib-jade',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   name: 'grunt-contrib-jade',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-jade
+32 verbose addNameTag registry:https://registry.npmjs.org/grunt-contrib-jade not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/grunt-contrib-jade
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 00:45:38
+36 verbose request id 224b954652b7aeb4
+37 http request GET https://registry.npmjs.org/grunt-contrib-jade
+38 http 200 https://registry.npmjs.org/grunt-contrib-jade
+39 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   etag: '"8CB0HHHZZ3S3R7QZKN6LBGK3W"',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'content-encoding': 'gzip',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '7443',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Mon, 20 Jun 2016 22:45:38 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   age: '0',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1466462738.744170,VS0,VE190',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 silly get cb [ 200,
+40 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 silly get     etag: '"8CB0HHHZZ3S3R7QZKN6LBGK3W"',
+40 silly get     'content-type': 'application/json',
+40 silly get     'content-encoding': 'gzip',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     'content-length': '7443',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Mon, 20 Jun 2016 22:45:38 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-ams4123-AMS',
+40 silly get     'x-cache': 'MISS',
+40 silly get     'x-cache-hits': '0',
+40 silly get     'x-timer': 'S1466462738.744170,VS0,VE190',
+40 silly get     vary: 'Accept-Encoding' } ]
+41 verbose get saving grunt-contrib-jade to /Users/vivianntunell/.npm/registry.npmjs.org/grunt-contrib-jade/.cache.json
+42 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+43 silly addNameTag next cb for grunt-contrib-jade with tag latest
+44 silly addNamed grunt-contrib-jade@1.0.0
+45 verbose addNamed "1.0.0" is a plain semver version for grunt-contrib-jade
+46 silly mapToRegistry name grunt-contrib-jade
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'grunt-contrib-jade',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   name: 'grunt-contrib-jade',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-jade
+51 verbose addRemoteTarball https://registry.npmjs.org/grunt-contrib-jade/-/grunt-contrib-jade-1.0.0.tgz not in flight; adding
+52 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-jade/-/grunt-contrib-jade-1.0.0.tgz',
+52 verbose addRemoteTarball   'b557bcb9cd2e733ad4e2090e129beb201b0b845c' ]
+53 info retry fetch attempt 1 at 00:45:39
+54 info attempt registry request try #1 at 00:45:39
+55 http fetch GET https://registry.npmjs.org/grunt-contrib-jade/-/grunt-contrib-jade-1.0.0.tgz
+56 http fetch 200 https://registry.npmjs.org/grunt-contrib-jade/-/grunt-contrib-jade-1.0.0.tgz
+57 silly fetchAndShaCheck shasum b557bcb9cd2e733ad4e2090e129beb201b0b845c
+58 verbose addTmpTarball /var/folders/zf/0bfpv8nx5wn2c9l1jjppcws80000gn/T/npm-11030-c82c404a/registry.npmjs.org/grunt-contrib-jade/-/grunt-contrib-jade-1.0.0.tgz not in flight; adding
+59 verbose addTmpTarball already have metadata; skipping unpack for grunt-contrib-jade@1.0.0
+60 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+61 silly cache afterAdd grunt-contrib-jade@1.0.0
+62 verbose afterAdd /Users/vivianntunell/.npm/grunt-contrib-jade/1.0.0/package/package.json not in flight; writing
+63 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+64 verbose afterAdd /Users/vivianntunell/.npm/grunt-contrib-jade/1.0.0/package/package.json written
+65 silly install resolved [ { name: 'grunt-contrib-jade',
+65 silly install resolved     description: 'Compile Jade templates',
+65 silly install resolved     version: '1.0.0',
+65 silly install resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+65 silly install resolved     repository:
+65 silly install resolved      { type: 'git',
+65 silly install resolved        url: 'git+https://github.com/gruntjs/grunt-contrib-jade.git' },
+65 silly install resolved     license: 'MIT',
+65 silly install resolved     engines: { node: '>=0.10.0' },
+65 silly install resolved     main: 'tasks/jade.js',
+65 silly install resolved     scripts: { test: 'grunt test' },
+65 silly install resolved     dependencies: { chalk: '^1.0.0', jade: '^1.11.0' },
+65 silly install resolved     devDependencies:
+65 silly install resolved      { grunt: '^0.4.5',
+65 silly install resolved        'grunt-cli': '^0.1.13',
+65 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+65 silly install resolved        'grunt-contrib-internal': '^0.4.6',
+65 silly install resolved        'grunt-contrib-jshint': '^0.11.0',
+65 silly install resolved        'grunt-contrib-nodeunit': '^0.4.1' },
+65 silly install resolved     keywords: [ 'gruntplugin' ],
+65 silly install resolved     files: [ 'tasks' ],
+65 silly install resolved     appveyor_id: 'p24tu0v9akk906yq',
+65 silly install resolved     contributors:
+65 silly install resolved      [ [Object],
+65 silly install resolved        [Object],
+65 silly install resolved        [Object],
+65 silly install resolved        [Object],
+65 silly install resolved        [Object],
+65 silly install resolved        [Object],
+65 silly install resolved        [Object],
+65 silly install resolved        [Object] ],
+65 silly install resolved     gitHead: 'a7af7c22f2d4ee54c441042c4b4ba1bd79766416',
+65 silly install resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-jade/issues' },
+65 silly install resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-jade#readme',
+65 silly install resolved     _id: 'grunt-contrib-jade@1.0.0',
+65 silly install resolved     _shasum: 'b557bcb9cd2e733ad4e2090e129beb201b0b845c',
+65 silly install resolved     _from: 'grunt-contrib-jade@latest',
+65 silly install resolved     _npmVersion: '2.14.17',
+65 silly install resolved     _nodeVersion: '4.2.3',
+65 silly install resolved     _npmUser: { name: 'vladikoff', email: 'vlad@vladikoff.com' },
+65 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+65 silly install resolved     dist:
+65 silly install resolved      { shasum: 'b557bcb9cd2e733ad4e2090e129beb201b0b845c',
+65 silly install resolved        tarball: 'https://registry.npmjs.org/grunt-contrib-jade/-/grunt-contrib-jade-1.0.0.tgz' },
+65 silly install resolved     _npmOperationalInternal:
+65 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+65 silly install resolved        tmp: 'tmp/grunt-contrib-jade-1.0.0.tgz_1457127799372_0.0650034979917109' },
+65 silly install resolved     directories: {},
+65 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-jade/-/grunt-contrib-jade-1.0.0.tgz' } ]
+66 info install grunt-contrib-jade@1.0.0 into /Users/vivianntunell/Desktop/StartKit
+67 info installOne grunt-contrib-jade@1.0.0
+68 verbose installOne of grunt-contrib-jade to /Users/vivianntunell/Desktop/StartKit not in flight; installing
+69 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+70 verbose lock using /Users/vivianntunell/.npm/_locks/grunt-contrib-jade-cc60185e8a0a57b0.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+71 silly install write writing grunt-contrib-jade 1.0.0 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+72 verbose unbuild node_modules/grunt-contrib-jade
+73 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade is being purged from base /Users/vivianntunell/Desktop/StartKit
+74 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+75 verbose tar unpack /Users/vivianntunell/.npm/grunt-contrib-jade/1.0.0/package.tgz
+76 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+77 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade is being purged
+78 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+79 silly gunzTarPerm modes [ '755', '644' ]
+80 silly gunzTarPerm extractEntry package.json
+81 silly gunzTarPerm extractEntry README.md
+82 silly gunzTarPerm extractEntry CHANGELOG
+83 silly gunzTarPerm extractEntry tasks/jade.js
+84 silly gunzTarPerm extractEntry tasks/lib/jade.js
+85 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/package.json
+86 info preinstall grunt-contrib-jade@1.0.0
+87 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/package.json
+88 silly prepareForInstallMany adding chalk@^1.0.0 from grunt-contrib-jade dependencies
+89 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/package.json
+90 silly cache add args [ 'chalk@^1.0.0', null ]
+91 verbose cache add spec chalk@^1.0.0
+92 silly cache add parsed spec Result {
+92 silly cache add   raw: 'chalk@^1.0.0',
+92 silly cache add   scope: null,
+92 silly cache add   name: 'chalk',
+92 silly cache add   rawSpec: '^1.0.0',
+92 silly cache add   spec: '>=1.0.0 <2.0.0',
+92 silly cache add   type: 'range' }
+93 silly addNamed chalk@>=1.0.0 <2.0.0
+94 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for chalk
+95 silly addNameRange { name: 'chalk', range: '>=1.0.0 <2.0.0', hasData: false }
+96 silly mapToRegistry name chalk
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry data Result {
+99 silly mapToRegistry   raw: 'chalk',
+99 silly mapToRegistry   scope: null,
+99 silly mapToRegistry   name: 'chalk',
+99 silly mapToRegistry   rawSpec: '',
+99 silly mapToRegistry   spec: 'latest',
+99 silly mapToRegistry   type: 'tag' }
+100 silly mapToRegistry uri https://registry.npmjs.org/chalk
+101 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+102 verbose request uri https://registry.npmjs.org/chalk
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 00:45:39
+105 verbose etag "EG3M1IWZ89JC7G1W1S0GA0ZKP"
+106 http request GET https://registry.npmjs.org/chalk
+107 http 304 https://registry.npmjs.org/chalk
+108 verbose headers { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+108 verbose headers   via: '1.1 varnish',
+108 verbose headers   'cache-control': 'max-age=300',
+108 verbose headers   etag: '"EG3M1IWZ89JC7G1W1S0GA0ZKP"',
+108 verbose headers   age: '146',
+108 verbose headers   connection: 'keep-alive',
+108 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+108 verbose headers   'x-cache': 'HIT',
+108 verbose headers   'x-cache-hits': '1',
+108 verbose headers   'x-timer': 'S1466462739.119937,VS0,VE0',
+108 verbose headers   vary: 'Accept-Encoding' }
+109 silly get cb [ 304,
+109 silly get   { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+109 silly get     via: '1.1 varnish',
+109 silly get     'cache-control': 'max-age=300',
+109 silly get     etag: '"EG3M1IWZ89JC7G1W1S0GA0ZKP"',
+109 silly get     age: '146',
+109 silly get     connection: 'keep-alive',
+109 silly get     'x-served-by': 'cache-ams4123-AMS',
+109 silly get     'x-cache': 'HIT',
+109 silly get     'x-cache-hits': '1',
+109 silly get     'x-timer': 'S1466462739.119937,VS0,VE0',
+109 silly get     vary: 'Accept-Encoding' } ]
+110 verbose etag https://registry.npmjs.org/chalk from cache
+111 verbose get saving chalk to /Users/vivianntunell/.npm/registry.npmjs.org/chalk/.cache.json
+112 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+113 silly addNameRange number 2 { name: 'chalk', range: '>=1.0.0 <2.0.0', hasData: true }
+114 silly addNameRange versions [ 'chalk',
+114 silly addNameRange   [ '0.1.0',
+114 silly addNameRange     '0.1.1',
+114 silly addNameRange     '0.2.0',
+114 silly addNameRange     '0.2.1',
+114 silly addNameRange     '0.3.0',
+114 silly addNameRange     '0.4.0',
+114 silly addNameRange     '0.5.0',
+114 silly addNameRange     '0.5.1',
+114 silly addNameRange     '1.0.0',
+114 silly addNameRange     '1.1.0',
+114 silly addNameRange     '1.1.1',
+114 silly addNameRange     '1.1.2',
+114 silly addNameRange     '1.1.3' ] ]
+115 silly addNamed chalk@1.1.3
+116 verbose addNamed "1.1.3" is a plain semver version for chalk
+117 silly cache afterAdd chalk@1.1.3
+118 verbose afterAdd /Users/vivianntunell/.npm/chalk/1.1.3/package/package.json not in flight; writing
+119 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+120 verbose afterAdd /Users/vivianntunell/.npm/chalk/1.1.3/package/package.json written
+121 silly install resolved [ { name: 'chalk',
+121 silly install resolved     version: '1.1.3',
+121 silly install resolved     description: 'Terminal string styling done right. Much color.',
+121 silly install resolved     license: 'MIT',
+121 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/chalk/chalk.git' },
+121 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+121 silly install resolved     engines: { node: '>=0.10.0' },
+121 silly install resolved     scripts:
+121 silly install resolved      { test: 'xo && mocha',
+121 silly install resolved        bench: 'matcha benchmark.js',
+121 silly install resolved        coverage: 'nyc npm test && nyc report',
+121 silly install resolved        coveralls: 'nyc npm test && nyc report --reporter=text-lcov | coveralls' },
+121 silly install resolved     files: [ 'index.js' ],
+121 silly install resolved     keywords:
+121 silly install resolved      [ 'color',
+121 silly install resolved        'colour',
+121 silly install resolved        'colors',
+121 silly install resolved        'terminal',
+121 silly install resolved        'console',
+121 silly install resolved        'cli',
+121 silly install resolved        'string',
+121 silly install resolved        'str',
+121 silly install resolved        'ansi',
+121 silly install resolved        'style',
+121 silly install resolved        'styles',
+121 silly install resolved        'tty',
+121 silly install resolved        'formatting',
+121 silly install resolved        'rgb',
+121 silly install resolved        '256',
+121 silly install resolved        'shell',
+121 silly install resolved        'xterm',
+121 silly install resolved        'log',
+121 silly install resolved        'logging',
+121 silly install resolved        'command-line',
+121 silly install resolved        'text' ],
+121 silly install resolved     dependencies:
+121 silly install resolved      { 'ansi-styles': '^2.2.1',
+121 silly install resolved        'escape-string-regexp': '^1.0.2',
+121 silly install resolved        'has-ansi': '^2.0.0',
+121 silly install resolved        'strip-ansi': '^3.0.0',
+121 silly install resolved        'supports-color': '^2.0.0' },
+121 silly install resolved     devDependencies:
+121 silly install resolved      { coveralls: '^2.11.2',
+121 silly install resolved        matcha: '^0.6.0',
+121 silly install resolved        mocha: '*',
+121 silly install resolved        nyc: '^3.0.0',
+121 silly install resolved        'require-uncached': '^1.0.2',
+121 silly install resolved        'resolve-from': '^1.0.0',
+121 silly install resolved        semver: '^4.3.3',
+121 silly install resolved        xo: '*' },
+121 silly install resolved     xo: { envs: [Object] },
+121 silly install resolved     gitHead: '0d8d8c204eb87a4038219131ad4d8369c9f59d24',
+121 silly install resolved     bugs: { url: 'https://github.com/chalk/chalk/issues' },
+121 silly install resolved     homepage: 'https://github.com/chalk/chalk#readme',
+121 silly install resolved     _id: 'chalk@1.1.3',
+121 silly install resolved     _shasum: 'a8115c55e4a702fe4d150abd3872822a7e09fc98',
+121 silly install resolved     _from: 'chalk@>=1.0.0 <2.0.0',
+121 silly install resolved     _npmVersion: '2.14.2',
+121 silly install resolved     _nodeVersion: '0.10.32',
+121 silly install resolved     _npmUser: { name: 'qix', email: 'i.am.qix@gmail.com' },
+121 silly install resolved     dist:
+121 silly install resolved      { shasum: 'a8115c55e4a702fe4d150abd3872822a7e09fc98',
+121 silly install resolved        tarball: 'https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz' },
+121 silly install resolved     _npmOperationalInternal:
+121 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+121 silly install resolved        tmp: 'tmp/chalk-1.1.3.tgz_1459210604109_0.3892582862172276' },
+121 silly install resolved     directories: {},
+121 silly install resolved     _resolved: 'https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz',
+121 silly install resolved     readme: 'ERROR: No README data found!' } ]
+122 info install chalk@1.1.3 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+123 info installOne chalk@1.1.3
+124 verbose installOne of chalk to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade not in flight; installing
+125 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+126 verbose lock using /Users/vivianntunell/.npm/_locks/chalk-49033352cfe51747.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+127 silly install write writing chalk 1.1.3 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+128 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk
+129 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk is being purged from base /Users/vivianntunell/Desktop/StartKit
+130 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+131 verbose tar unpack /Users/vivianntunell/.npm/chalk/1.1.3/package.tgz
+132 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+133 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk is being purged
+134 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+135 silly gunzTarPerm modes [ '755', '644' ]
+136 silly gunzTarPerm extractEntry package.json
+137 silly gunzTarPerm extractEntry index.js
+138 silly gunzTarPerm extractEntry license
+139 silly gunzTarPerm extractEntry readme.md
+140 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/package.json
+141 info preinstall chalk@1.1.3
+142 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/package.json
+143 silly prepareForInstallMany adding ansi-styles@^2.2.1 from chalk dependencies
+144 silly prepareForInstallMany adding escape-string-regexp@^1.0.2 from chalk dependencies
+145 silly prepareForInstallMany adding has-ansi@^2.0.0 from chalk dependencies
+146 silly prepareForInstallMany adding strip-ansi@^3.0.0 from chalk dependencies
+147 silly prepareForInstallMany adding supports-color@^2.0.0 from chalk dependencies
+148 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/package.json
+149 silly cache add args [ 'ansi-styles@^2.2.1', null ]
+150 verbose cache add spec ansi-styles@^2.2.1
+151 silly cache add args [ 'escape-string-regexp@^1.0.2', null ]
+152 verbose cache add spec escape-string-regexp@^1.0.2
+153 silly cache add parsed spec Result {
+153 silly cache add   raw: 'ansi-styles@^2.2.1',
+153 silly cache add   scope: null,
+153 silly cache add   name: 'ansi-styles',
+153 silly cache add   rawSpec: '^2.2.1',
+153 silly cache add   spec: '>=2.2.1 <3.0.0',
+153 silly cache add   type: 'range' }
+154 silly addNamed ansi-styles@>=2.2.1 <3.0.0
+155 verbose addNamed ">=2.2.1 <3.0.0" is a valid semver range for ansi-styles
+156 silly addNameRange { name: 'ansi-styles', range: '>=2.2.1 <3.0.0', hasData: false }
+157 silly mapToRegistry name ansi-styles
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry data Result {
+160 silly mapToRegistry   raw: 'ansi-styles',
+160 silly mapToRegistry   scope: null,
+160 silly mapToRegistry   name: 'ansi-styles',
+160 silly mapToRegistry   rawSpec: '',
+160 silly mapToRegistry   spec: 'latest',
+160 silly mapToRegistry   type: 'tag' }
+161 silly mapToRegistry uri https://registry.npmjs.org/ansi-styles
+162 verbose addNameRange registry:https://registry.npmjs.org/ansi-styles not in flight; fetching
+163 silly cache add parsed spec Result {
+163 silly cache add   raw: 'escape-string-regexp@^1.0.2',
+163 silly cache add   scope: null,
+163 silly cache add   name: 'escape-string-regexp',
+163 silly cache add   rawSpec: '^1.0.2',
+163 silly cache add   spec: '>=1.0.2 <2.0.0',
+163 silly cache add   type: 'range' }
+164 silly addNamed escape-string-regexp@>=1.0.2 <2.0.0
+165 verbose addNamed ">=1.0.2 <2.0.0" is a valid semver range for escape-string-regexp
+166 silly addNameRange { name: 'escape-string-regexp',
+166 silly addNameRange   range: '>=1.0.2 <2.0.0',
+166 silly addNameRange   hasData: false }
+167 silly mapToRegistry name escape-string-regexp
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry data Result {
+170 silly mapToRegistry   raw: 'escape-string-regexp',
+170 silly mapToRegistry   scope: null,
+170 silly mapToRegistry   name: 'escape-string-regexp',
+170 silly mapToRegistry   rawSpec: '',
+170 silly mapToRegistry   spec: 'latest',
+170 silly mapToRegistry   type: 'tag' }
+171 silly mapToRegistry uri https://registry.npmjs.org/escape-string-regexp
+172 verbose addNameRange registry:https://registry.npmjs.org/escape-string-regexp not in flight; fetching
+173 silly cache add args [ 'has-ansi@^2.0.0', null ]
+174 verbose cache add spec has-ansi@^2.0.0
+175 silly cache add parsed spec Result {
+175 silly cache add   raw: 'has-ansi@^2.0.0',
+175 silly cache add   scope: null,
+175 silly cache add   name: 'has-ansi',
+175 silly cache add   rawSpec: '^2.0.0',
+175 silly cache add   spec: '>=2.0.0 <3.0.0',
+175 silly cache add   type: 'range' }
+176 silly addNamed has-ansi@>=2.0.0 <3.0.0
+177 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for has-ansi
+178 silly addNameRange { name: 'has-ansi', range: '>=2.0.0 <3.0.0', hasData: false }
+179 silly mapToRegistry name has-ansi
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry data Result {
+182 silly mapToRegistry   raw: 'has-ansi',
+182 silly mapToRegistry   scope: null,
+182 silly mapToRegistry   name: 'has-ansi',
+182 silly mapToRegistry   rawSpec: '',
+182 silly mapToRegistry   spec: 'latest',
+182 silly mapToRegistry   type: 'tag' }
+183 silly mapToRegistry uri https://registry.npmjs.org/has-ansi
+184 verbose addNameRange registry:https://registry.npmjs.org/has-ansi not in flight; fetching
+185 silly cache add args [ 'strip-ansi@^3.0.0', null ]
+186 verbose cache add spec strip-ansi@^3.0.0
+187 silly cache add parsed spec Result {
+187 silly cache add   raw: 'strip-ansi@^3.0.0',
+187 silly cache add   scope: null,
+187 silly cache add   name: 'strip-ansi',
+187 silly cache add   rawSpec: '^3.0.0',
+187 silly cache add   spec: '>=3.0.0 <4.0.0',
+187 silly cache add   type: 'range' }
+188 silly addNamed strip-ansi@>=3.0.0 <4.0.0
+189 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for strip-ansi
+190 silly addNameRange { name: 'strip-ansi', range: '>=3.0.0 <4.0.0', hasData: false }
+191 silly mapToRegistry name strip-ansi
+192 silly mapToRegistry using default registry
+193 silly mapToRegistry registry https://registry.npmjs.org/
+194 silly mapToRegistry data Result {
+194 silly mapToRegistry   raw: 'strip-ansi',
+194 silly mapToRegistry   scope: null,
+194 silly mapToRegistry   name: 'strip-ansi',
+194 silly mapToRegistry   rawSpec: '',
+194 silly mapToRegistry   spec: 'latest',
+194 silly mapToRegistry   type: 'tag' }
+195 silly mapToRegistry uri https://registry.npmjs.org/strip-ansi
+196 verbose addNameRange registry:https://registry.npmjs.org/strip-ansi not in flight; fetching
+197 silly cache add args [ 'supports-color@^2.0.0', null ]
+198 verbose cache add spec supports-color@^2.0.0
+199 silly cache add parsed spec Result {
+199 silly cache add   raw: 'supports-color@^2.0.0',
+199 silly cache add   scope: null,
+199 silly cache add   name: 'supports-color',
+199 silly cache add   rawSpec: '^2.0.0',
+199 silly cache add   spec: '>=2.0.0 <3.0.0',
+199 silly cache add   type: 'range' }
+200 silly addNamed supports-color@>=2.0.0 <3.0.0
+201 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for supports-color
+202 silly addNameRange { name: 'supports-color',
+202 silly addNameRange   range: '>=2.0.0 <3.0.0',
+202 silly addNameRange   hasData: false }
+203 silly mapToRegistry name supports-color
+204 silly mapToRegistry using default registry
+205 silly mapToRegistry registry https://registry.npmjs.org/
+206 silly mapToRegistry data Result {
+206 silly mapToRegistry   raw: 'supports-color',
+206 silly mapToRegistry   scope: null,
+206 silly mapToRegistry   name: 'supports-color',
+206 silly mapToRegistry   rawSpec: '',
+206 silly mapToRegistry   spec: 'latest',
+206 silly mapToRegistry   type: 'tag' }
+207 silly mapToRegistry uri https://registry.npmjs.org/supports-color
+208 verbose addNameRange registry:https://registry.npmjs.org/supports-color not in flight; fetching
+209 verbose request uri https://registry.npmjs.org/escape-string-regexp
+210 verbose request no auth needed
+211 info attempt registry request try #1 at 00:45:39
+212 verbose etag "6KTGFS9RIPM29TUJQ6RDLQRVA"
+213 http request GET https://registry.npmjs.org/escape-string-regexp
+214 verbose request uri https://registry.npmjs.org/strip-ansi
+215 verbose request no auth needed
+216 info attempt registry request try #1 at 00:45:39
+217 verbose etag "B6TG8P0JRVWX1Y3QTWOIVFFNQ"
+218 http request GET https://registry.npmjs.org/strip-ansi
+219 verbose request uri https://registry.npmjs.org/has-ansi
+220 verbose request no auth needed
+221 info attempt registry request try #1 at 00:45:39
+222 verbose etag "5BRJ6SWTFTG3PC77WJMU0S9MB"
+223 http request GET https://registry.npmjs.org/has-ansi
+224 verbose request uri https://registry.npmjs.org/supports-color
+225 verbose request no auth needed
+226 info attempt registry request try #1 at 00:45:39
+227 verbose etag "87VJAKWYUF4A2G4LCQKH55FZE"
+228 http request GET https://registry.npmjs.org/supports-color
+229 verbose request uri https://registry.npmjs.org/ansi-styles
+230 verbose request no auth needed
+231 info attempt registry request try #1 at 00:45:39
+232 verbose etag "2S43S9IH54YQSFIO0BL7CTRUF"
+233 http request GET https://registry.npmjs.org/ansi-styles
+234 http 304 https://registry.npmjs.org/escape-string-regexp
+235 verbose headers { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+235 verbose headers   via: '1.1 varnish',
+235 verbose headers   'cache-control': 'max-age=300',
+235 verbose headers   etag: '"6KTGFS9RIPM29TUJQ6RDLQRVA"',
+235 verbose headers   age: '58',
+235 verbose headers   connection: 'keep-alive',
+235 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+235 verbose headers   'x-cache': 'HIT',
+235 verbose headers   'x-cache-hits': '3',
+235 verbose headers   'x-timer': 'S1466462739.210117,VS0,VE0',
+235 verbose headers   vary: 'Accept-Encoding' }
+236 silly get cb [ 304,
+236 silly get   { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+236 silly get     via: '1.1 varnish',
+236 silly get     'cache-control': 'max-age=300',
+236 silly get     etag: '"6KTGFS9RIPM29TUJQ6RDLQRVA"',
+236 silly get     age: '58',
+236 silly get     connection: 'keep-alive',
+236 silly get     'x-served-by': 'cache-ams4123-AMS',
+236 silly get     'x-cache': 'HIT',
+236 silly get     'x-cache-hits': '3',
+236 silly get     'x-timer': 'S1466462739.210117,VS0,VE0',
+236 silly get     vary: 'Accept-Encoding' } ]
+237 verbose etag https://registry.npmjs.org/escape-string-regexp from cache
+238 verbose get saving escape-string-regexp to /Users/vivianntunell/.npm/registry.npmjs.org/escape-string-regexp/.cache.json
+239 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+240 silly addNameRange number 2 { name: 'escape-string-regexp',
+240 silly addNameRange   range: '>=1.0.2 <2.0.0',
+240 silly addNameRange   hasData: true }
+241 silly addNameRange versions [ 'escape-string-regexp',
+241 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+242 silly addNamed escape-string-regexp@1.0.5
+243 verbose addNamed "1.0.5" is a plain semver version for escape-string-regexp
+244 silly cache afterAdd escape-string-regexp@1.0.5
+245 verbose afterAdd /Users/vivianntunell/.npm/escape-string-regexp/1.0.5/package/package.json not in flight; writing
+246 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+247 verbose afterAdd /Users/vivianntunell/.npm/escape-string-regexp/1.0.5/package/package.json written
+248 http 304 https://registry.npmjs.org/strip-ansi
+249 verbose headers { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+249 verbose headers   via: '1.1 varnish',
+249 verbose headers   'cache-control': 'max-age=300',
+249 verbose headers   etag: '"B6TG8P0JRVWX1Y3QTWOIVFFNQ"',
+249 verbose headers   age: '217',
+249 verbose headers   connection: 'keep-alive',
+249 verbose headers   'x-served-by': 'cache-ams4146-AMS',
+249 verbose headers   'x-cache': 'HIT',
+249 verbose headers   'x-cache-hits': '8',
+249 verbose headers   'x-timer': 'S1466462739.284449,VS0,VE0',
+249 verbose headers   vary: 'Accept-Encoding' }
+250 silly get cb [ 304,
+250 silly get   { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+250 silly get     via: '1.1 varnish',
+250 silly get     'cache-control': 'max-age=300',
+250 silly get     etag: '"B6TG8P0JRVWX1Y3QTWOIVFFNQ"',
+250 silly get     age: '217',
+250 silly get     connection: 'keep-alive',
+250 silly get     'x-served-by': 'cache-ams4146-AMS',
+250 silly get     'x-cache': 'HIT',
+250 silly get     'x-cache-hits': '8',
+250 silly get     'x-timer': 'S1466462739.284449,VS0,VE0',
+250 silly get     vary: 'Accept-Encoding' } ]
+251 verbose etag https://registry.npmjs.org/strip-ansi from cache
+252 verbose get saving strip-ansi to /Users/vivianntunell/.npm/registry.npmjs.org/strip-ansi/.cache.json
+253 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+254 silly addNameRange number 2 { name: 'strip-ansi', range: '>=3.0.0 <4.0.0', hasData: true }
+255 silly addNameRange versions [ 'strip-ansi',
+255 silly addNameRange   [ '0.1.0',
+255 silly addNameRange     '0.1.1',
+255 silly addNameRange     '0.2.0',
+255 silly addNameRange     '0.2.1',
+255 silly addNameRange     '0.2.2',
+255 silly addNameRange     '0.3.0',
+255 silly addNameRange     '1.0.0',
+255 silly addNameRange     '2.0.0',
+255 silly addNameRange     '2.0.1',
+255 silly addNameRange     '3.0.0',
+255 silly addNameRange     '3.0.1' ] ]
+256 silly addNamed strip-ansi@3.0.1
+257 verbose addNamed "3.0.1" is a plain semver version for strip-ansi
+258 silly cache afterAdd strip-ansi@3.0.1
+259 verbose afterAdd /Users/vivianntunell/.npm/strip-ansi/3.0.1/package/package.json not in flight; writing
+260 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+261 verbose afterAdd /Users/vivianntunell/.npm/strip-ansi/3.0.1/package/package.json written
+262 http 304 https://registry.npmjs.org/ansi-styles
+263 verbose headers { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+263 verbose headers   via: '1.1 varnish',
+263 verbose headers   'cache-control': 'max-age=300',
+263 verbose headers   etag: '"2S43S9IH54YQSFIO0BL7CTRUF"',
+263 verbose headers   age: '23',
+263 verbose headers   connection: 'keep-alive',
+263 verbose headers   'x-served-by': 'cache-ams4129-AMS',
+263 verbose headers   'x-cache': 'HIT',
+263 verbose headers   'x-cache-hits': '1',
+263 verbose headers   'x-timer': 'S1466462739.297343,VS0,VE0',
+263 verbose headers   vary: 'Accept-Encoding' }
+264 silly get cb [ 304,
+264 silly get   { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+264 silly get     via: '1.1 varnish',
+264 silly get     'cache-control': 'max-age=300',
+264 silly get     etag: '"2S43S9IH54YQSFIO0BL7CTRUF"',
+264 silly get     age: '23',
+264 silly get     connection: 'keep-alive',
+264 silly get     'x-served-by': 'cache-ams4129-AMS',
+264 silly get     'x-cache': 'HIT',
+264 silly get     'x-cache-hits': '1',
+264 silly get     'x-timer': 'S1466462739.297343,VS0,VE0',
+264 silly get     vary: 'Accept-Encoding' } ]
+265 verbose etag https://registry.npmjs.org/ansi-styles from cache
+266 verbose get saving ansi-styles to /Users/vivianntunell/.npm/registry.npmjs.org/ansi-styles/.cache.json
+267 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+268 http 304 https://registry.npmjs.org/has-ansi
+269 verbose headers { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+269 verbose headers   via: '1.1 varnish',
+269 verbose headers   'cache-control': 'max-age=300',
+269 verbose headers   etag: '"5BRJ6SWTFTG3PC77WJMU0S9MB"',
+269 verbose headers   age: '97',
+269 verbose headers   connection: 'keep-alive',
+269 verbose headers   'x-served-by': 'cache-ams4138-AMS',
+269 verbose headers   'x-cache': 'HIT',
+269 verbose headers   'x-cache-hits': '1',
+269 verbose headers   'x-timer': 'S1466462739.298348,VS0,VE0',
+269 verbose headers   vary: 'Accept-Encoding' }
+270 silly get cb [ 304,
+270 silly get   { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+270 silly get     via: '1.1 varnish',
+270 silly get     'cache-control': 'max-age=300',
+270 silly get     etag: '"5BRJ6SWTFTG3PC77WJMU0S9MB"',
+270 silly get     age: '97',
+270 silly get     connection: 'keep-alive',
+270 silly get     'x-served-by': 'cache-ams4138-AMS',
+270 silly get     'x-cache': 'HIT',
+270 silly get     'x-cache-hits': '1',
+270 silly get     'x-timer': 'S1466462739.298348,VS0,VE0',
+270 silly get     vary: 'Accept-Encoding' } ]
+271 verbose etag https://registry.npmjs.org/has-ansi from cache
+272 verbose get saving has-ansi to /Users/vivianntunell/.npm/registry.npmjs.org/has-ansi/.cache.json
+273 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+274 silly addNameRange number 2 { name: 'ansi-styles', range: '>=2.2.1 <3.0.0', hasData: true }
+275 silly addNameRange versions [ 'ansi-styles',
+275 silly addNameRange   [ '0.1.0',
+275 silly addNameRange     '0.1.1',
+275 silly addNameRange     '0.1.2',
+275 silly addNameRange     '0.2.0',
+275 silly addNameRange     '1.0.0',
+275 silly addNameRange     '1.1.0',
+275 silly addNameRange     '2.0.0',
+275 silly addNameRange     '2.0.1',
+275 silly addNameRange     '2.1.0',
+275 silly addNameRange     '2.2.1' ] ]
+276 silly addNamed ansi-styles@2.2.1
+277 verbose addNamed "2.2.1" is a plain semver version for ansi-styles
+278 silly addNameRange number 2 { name: 'has-ansi', range: '>=2.0.0 <3.0.0', hasData: true }
+279 silly addNameRange versions [ 'has-ansi',
+279 silly addNameRange   [ '0.1.0', '1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0' ] ]
+280 silly addNamed has-ansi@2.0.0
+281 verbose addNamed "2.0.0" is a plain semver version for has-ansi
+282 silly cache afterAdd ansi-styles@2.2.1
+283 verbose afterAdd /Users/vivianntunell/.npm/ansi-styles/2.2.1/package/package.json not in flight; writing
+284 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+285 verbose afterAdd /Users/vivianntunell/.npm/ansi-styles/2.2.1/package/package.json written
+286 silly cache afterAdd has-ansi@2.0.0
+287 verbose afterAdd /Users/vivianntunell/.npm/has-ansi/2.0.0/package/package.json not in flight; writing
+288 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+289 verbose afterAdd /Users/vivianntunell/.npm/has-ansi/2.0.0/package/package.json written
+290 http 304 https://registry.npmjs.org/supports-color
+291 verbose headers { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+291 verbose headers   via: '1.1 varnish',
+291 verbose headers   'cache-control': 'max-age=300',
+291 verbose headers   etag: '"87VJAKWYUF4A2G4LCQKH55FZE"',
+291 verbose headers   age: '0',
+291 verbose headers   connection: 'keep-alive',
+291 verbose headers   'x-served-by': 'cache-ams4145-AMS',
+291 verbose headers   'x-cache': 'HIT',
+291 verbose headers   'x-cache-hits': '1',
+291 verbose headers   'x-timer': 'S1466462739.300435,VS0,VE380',
+291 verbose headers   vary: 'Accept-Encoding' }
+292 silly get cb [ 304,
+292 silly get   { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+292 silly get     via: '1.1 varnish',
+292 silly get     'cache-control': 'max-age=300',
+292 silly get     etag: '"87VJAKWYUF4A2G4LCQKH55FZE"',
+292 silly get     age: '0',
+292 silly get     connection: 'keep-alive',
+292 silly get     'x-served-by': 'cache-ams4145-AMS',
+292 silly get     'x-cache': 'HIT',
+292 silly get     'x-cache-hits': '1',
+292 silly get     'x-timer': 'S1466462739.300435,VS0,VE380',
+292 silly get     vary: 'Accept-Encoding' } ]
+293 verbose etag https://registry.npmjs.org/supports-color from cache
+294 verbose get saving supports-color to /Users/vivianntunell/.npm/registry.npmjs.org/supports-color/.cache.json
+295 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+296 silly addNameRange number 2 { name: 'supports-color',
+296 silly addNameRange   range: '>=2.0.0 <3.0.0',
+296 silly addNameRange   hasData: true }
+297 silly addNameRange versions [ 'supports-color',
+297 silly addNameRange   [ '0.2.0',
+297 silly addNameRange     '1.0.0',
+297 silly addNameRange     '1.1.0',
+297 silly addNameRange     '1.2.0',
+297 silly addNameRange     '1.2.1',
+297 silly addNameRange     '1.3.0',
+297 silly addNameRange     '1.3.1',
+297 silly addNameRange     '2.0.0',
+297 silly addNameRange     '3.0.0',
+297 silly addNameRange     '3.0.1',
+297 silly addNameRange     '3.1.0',
+297 silly addNameRange     '3.1.1',
+297 silly addNameRange     '3.1.2' ] ]
+298 silly addNamed supports-color@2.0.0
+299 verbose addNamed "2.0.0" is a plain semver version for supports-color
+300 silly cache afterAdd supports-color@2.0.0
+301 verbose afterAdd /Users/vivianntunell/.npm/supports-color/2.0.0/package/package.json not in flight; writing
+302 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+303 verbose afterAdd /Users/vivianntunell/.npm/supports-color/2.0.0/package/package.json written
+304 silly install resolved [ { name: 'escape-string-regexp',
+304 silly install resolved     version: '1.0.5',
+304 silly install resolved     description: 'Escape RegExp special characters',
+304 silly install resolved     license: 'MIT',
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git+https://github.com/sindresorhus/escape-string-regexp.git' },
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Sindre Sorhus',
+304 silly install resolved        email: 'sindresorhus@gmail.com',
+304 silly install resolved        url: 'sindresorhus.com' },
+304 silly install resolved     maintainers: [ [Object], [Object] ],
+304 silly install resolved     engines: { node: '>=0.8.0' },
+304 silly install resolved     scripts: { test: 'xo && ava' },
+304 silly install resolved     files: [ 'index.js' ],
+304 silly install resolved     keywords:
+304 silly install resolved      [ 'escape',
+304 silly install resolved        'regex',
+304 silly install resolved        'regexp',
+304 silly install resolved        're',
+304 silly install resolved        'regular',
+304 silly install resolved        'expression',
+304 silly install resolved        'string',
+304 silly install resolved        'str',
+304 silly install resolved        'special',
+304 silly install resolved        'characters' ],
+304 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+304 silly install resolved     gitHead: 'db124a3e1aae9d692c4899e42a5c6c3e329eaa20',
+304 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/escape-string-regexp/issues' },
+304 silly install resolved     homepage: 'https://github.com/sindresorhus/escape-string-regexp',
+304 silly install resolved     _id: 'escape-string-regexp@1.0.5',
+304 silly install resolved     _shasum: '1b61c0562190a8dff6ae3bb2cf0200ca130b86d4',
+304 silly install resolved     _from: 'escape-string-regexp@>=1.0.2 <2.0.0',
+304 silly install resolved     _npmVersion: '2.14.12',
+304 silly install resolved     _nodeVersion: '4.2.6',
+304 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: '1b61c0562190a8dff6ae3bb2cf0200ca130b86d4',
+304 silly install resolved        tarball: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz' },
+304 silly install resolved     _npmOperationalInternal:
+304 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+304 silly install resolved        tmp: 'tmp/escape-string-regexp-1.0.5.tgz_1456059312074_0.7245344955008477' },
+304 silly install resolved     directories: {},
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!' },
+304 silly install resolved   { name: 'strip-ansi',
+304 silly install resolved     version: '3.0.1',
+304 silly install resolved     description: 'Strip ANSI escape codes',
+304 silly install resolved     license: 'MIT',
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git+https://github.com/chalk/strip-ansi.git' },
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Sindre Sorhus',
+304 silly install resolved        email: 'sindresorhus@gmail.com',
+304 silly install resolved        url: 'sindresorhus.com' },
+304 silly install resolved     maintainers: [ [Object], [Object] ],
+304 silly install resolved     engines: { node: '>=0.10.0' },
+304 silly install resolved     scripts: { test: 'xo && ava' },
+304 silly install resolved     files: [ 'index.js' ],
+304 silly install resolved     keywords:
+304 silly install resolved      [ 'strip',
+304 silly install resolved        'trim',
+304 silly install resolved        'remove',
+304 silly install resolved        'ansi',
+304 silly install resolved        'styles',
+304 silly install resolved        'color',
+304 silly install resolved        'colour',
+304 silly install resolved        'colors',
+304 silly install resolved        'terminal',
+304 silly install resolved        'console',
+304 silly install resolved        'string',
+304 silly install resolved        'tty',
+304 silly install resolved        'escape',
+304 silly install resolved        'formatting',
+304 silly install resolved        'rgb',
+304 silly install resolved        '256',
+304 silly install resolved        'shell',
+304 silly install resolved        'xterm',
+304 silly install resolved        'log',
+304 silly install resolved        'logging',
+304 silly install resolved        'command-line',
+304 silly install resolved        'text' ],
+304 silly install resolved     dependencies: { 'ansi-regex': '^2.0.0' },
+304 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+304 silly install resolved     gitHead: '8270705c704956da865623e564eba4875c3ea17f',
+304 silly install resolved     bugs: { url: 'https://github.com/chalk/strip-ansi/issues' },
+304 silly install resolved     homepage: 'https://github.com/chalk/strip-ansi',
+304 silly install resolved     _id: 'strip-ansi@3.0.1',
+304 silly install resolved     _shasum: '6a385fb8853d952d5ff05d0e8aaf94278dc63dcf',
+304 silly install resolved     _from: 'strip-ansi@>=3.0.0 <4.0.0',
+304 silly install resolved     _npmVersion: '2.11.3',
+304 silly install resolved     _nodeVersion: '0.12.7',
+304 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: '6a385fb8853d952d5ff05d0e8aaf94278dc63dcf',
+304 silly install resolved        tarball: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz' },
+304 silly install resolved     _npmOperationalInternal:
+304 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+304 silly install resolved        tmp: 'tmp/strip-ansi-3.0.1.tgz_1456057278183_0.28958667791448534' },
+304 silly install resolved     directories: {},
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!' },
+304 silly install resolved   { name: 'ansi-styles',
+304 silly install resolved     version: '2.2.1',
+304 silly install resolved     description: 'ANSI escape codes for styling strings in the terminal',
+304 silly install resolved     license: 'MIT',
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git+https://github.com/chalk/ansi-styles.git' },
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Sindre Sorhus',
+304 silly install resolved        email: 'sindresorhus@gmail.com',
+304 silly install resolved        url: 'sindresorhus.com' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     engines: { node: '>=0.10.0' },
+304 silly install resolved     scripts: { test: 'mocha' },
+304 silly install resolved     files: [ 'index.js' ],
+304 silly install resolved     keywords:
+304 silly install resolved      [ 'ansi',
+304 silly install resolved        'styles',
+304 silly install resolved        'color',
+304 silly install resolved        'colour',
+304 silly install resolved        'colors',
+304 silly install resolved        'terminal',
+304 silly install resolved        'console',
+304 silly install resolved        'cli',
+304 silly install resolved        'string',
+304 silly install resolved        'tty',
+304 silly install resolved        'escape',
+304 silly install resolved        'formatting',
+304 silly install resolved        'rgb',
+304 silly install resolved        '256',
+304 silly install resolved        'shell',
+304 silly install resolved        'xterm',
+304 silly install resolved        'log',
+304 silly install resolved        'logging',
+304 silly install resolved        'command-line',
+304 silly install resolved        'text' ],
+304 silly install resolved     devDependencies: { mocha: '*' },
+304 silly install resolved     gitHead: '95c59b23be760108b6530ca1c89477c21b258032',
+304 silly install resolved     bugs: { url: 'https://github.com/chalk/ansi-styles/issues' },
+304 silly install resolved     homepage: 'https://github.com/chalk/ansi-styles#readme',
+304 silly install resolved     _id: 'ansi-styles@2.2.1',
+304 silly install resolved     _shasum: 'b432dd3358b634cf75e1e4664368240533c1ddbe',
+304 silly install resolved     _from: 'ansi-styles@>=2.2.1 <3.0.0',
+304 silly install resolved     _npmVersion: '3.8.3',
+304 silly install resolved     _nodeVersion: '4.3.0',
+304 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: 'b432dd3358b634cf75e1e4664368240533c1ddbe',
+304 silly install resolved        tarball: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz' },
+304 silly install resolved     _npmOperationalInternal:
+304 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+304 silly install resolved        tmp: 'tmp/ansi-styles-2.2.1.tgz_1459197317833_0.9694824463222176' },
+304 silly install resolved     directories: {},
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!' },
+304 silly install resolved   { name: 'has-ansi',
+304 silly install resolved     version: '2.0.0',
+304 silly install resolved     description: 'Check if a string has ANSI escape codes',
+304 silly install resolved     license: 'MIT',
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git+https://github.com/sindresorhus/has-ansi.git' },
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Sindre Sorhus',
+304 silly install resolved        email: 'sindresorhus@gmail.com',
+304 silly install resolved        url: 'sindresorhus.com' },
+304 silly install resolved     maintainers: [ [Object], [Object] ],
+304 silly install resolved     engines: { node: '>=0.10.0' },
+304 silly install resolved     scripts: { test: 'node test.js' },
+304 silly install resolved     files: [ 'index.js' ],
+304 silly install resolved     keywords:
+304 silly install resolved      [ 'ansi',
+304 silly install resolved        'styles',
+304 silly install resolved        'color',
+304 silly install resolved        'colour',
+304 silly install resolved        'colors',
+304 silly install resolved        'terminal',
+304 silly install resolved        'console',
+304 silly install resolved        'string',
+304 silly install resolved        'tty',
+304 silly install resolved        'escape',
+304 silly install resolved        'shell',
+304 silly install resolved        'xterm',
+304 silly install resolved        'command-line',
+304 silly install resolved        'text',
+304 silly install resolved        'regex',
+304 silly install resolved        'regexp',
+304 silly install resolved        're',
+304 silly install resolved        'match',
+304 silly install resolved        'test',
+304 silly install resolved        'find',
+304 silly install resolved        'pattern',
+304 silly install resolved        'has' ],
+304 silly install resolved     dependencies: { 'ansi-regex': '^2.0.0' },
+304 silly install resolved     devDependencies: { ava: '0.0.4' },
+304 silly install resolved     gitHead: '0722275e1bef139fcd09137da6e5550c3cd368b9',
+304 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/has-ansi/issues' },
+304 silly install resolved     homepage: 'https://github.com/sindresorhus/has-ansi',
+304 silly install resolved     _id: 'has-ansi@2.0.0',
+304 silly install resolved     _shasum: '34f5049ce1ecdf2b0649af3ef24e45ed35416d91',
+304 silly install resolved     _from: 'has-ansi@>=2.0.0 <3.0.0',
+304 silly install resolved     _npmVersion: '2.11.2',
+304 silly install resolved     _nodeVersion: '0.12.5',
+304 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: '34f5049ce1ecdf2b0649af3ef24e45ed35416d91',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz' },
+304 silly install resolved     directories: {},
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!' },
+304 silly install resolved   { name: 'supports-color',
+304 silly install resolved     version: '2.0.0',
+304 silly install resolved     description: 'Detect whether a terminal supports color',
+304 silly install resolved     license: 'MIT',
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git+https://github.com/chalk/supports-color.git' },
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Sindre Sorhus',
+304 silly install resolved        email: 'sindresorhus@gmail.com',
+304 silly install resolved        url: 'sindresorhus.com' },
+304 silly install resolved     maintainers: [ [Object], [Object] ],
+304 silly install resolved     engines: { node: '>=0.8.0' },
+304 silly install resolved     scripts: { test: 'mocha' },
+304 silly install resolved     files: [ 'index.js' ],
+304 silly install resolved     keywords:
+304 silly install resolved      [ 'color',
+304 silly install resolved        'colour',
+304 silly install resolved        'colors',
+304 silly install resolved        'terminal',
+304 silly install resolved        'console',
+304 silly install resolved        'cli',
+304 silly install resolved        'ansi',
+304 silly install resolved        'styles',
+304 silly install resolved        'tty',
+304 silly install resolved        'rgb',
+304 silly install resolved        '256',
+304 silly install resolved        'shell',
+304 silly install resolved        'xterm',
+304 silly install resolved        'command-line',
+304 silly install resolved        'support',
+304 silly install resolved        'supports',
+304 silly install resolved        'capability',
+304 silly install resolved        'detect' ],
+304 silly install resolved     devDependencies: { mocha: '*', 'require-uncached': '^1.0.2' },
+304 silly install resolved     gitHead: '8400d98ade32b2adffd50902c06d9e725a5c6588',
+304 silly install resolved     bugs: { url: 'https://github.com/chalk/supports-color/issues' },
+304 silly install resolved     homepage: 'https://github.com/chalk/supports-color',
+304 silly install resolved     _id: 'supports-color@2.0.0',
+304 silly install resolved     _shasum: '535d045ce6b6363fa40117084629995e9df324c7',
+304 silly install resolved     _from: 'supports-color@>=2.0.0 <3.0.0',
+304 silly install resolved     _npmVersion: '2.11.2',
+304 silly install resolved     _nodeVersion: '0.12.5',
+304 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: '535d045ce6b6363fa40117084629995e9df324c7',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz' },
+304 silly install resolved     directories: {},
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!' } ]
+305 info install escape-string-regexp@1.0.5 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+306 info install strip-ansi@3.0.1 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+307 info install ansi-styles@2.2.1 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+308 info install has-ansi@2.0.0 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+309 info install supports-color@2.0.0 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+310 info installOne escape-string-regexp@1.0.5
+311 verbose installOne of escape-string-regexp to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk not in flight; installing
+312 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+313 info installOne strip-ansi@3.0.1
+314 verbose installOne of strip-ansi to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk not in flight; installing
+315 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+316 info installOne ansi-styles@2.2.1
+317 verbose installOne of ansi-styles to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk not in flight; installing
+318 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+319 info installOne has-ansi@2.0.0
+320 verbose installOne of has-ansi to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk not in flight; installing
+321 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+322 info installOne supports-color@2.0.0
+323 verbose installOne of supports-color to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk not in flight; installing
+324 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+325 verbose lock using /Users/vivianntunell/.npm/_locks/escape-string-regexp-c1d9ec9b534e2cfa.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+326 verbose lock using /Users/vivianntunell/.npm/_locks/strip-ansi-7364e25a570e970d.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+327 silly install write writing escape-string-regexp 1.0.5 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+328 silly install write writing strip-ansi 3.0.1 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+329 verbose lock using /Users/vivianntunell/.npm/_locks/ansi-styles-ecd6a2d9e7c71049.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+330 verbose lock using /Users/vivianntunell/.npm/_locks/supports-color-1a31bdf41d74d512.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+331 verbose lock using /Users/vivianntunell/.npm/_locks/has-ansi-bf401862a46453b7.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+332 silly install write writing ansi-styles 2.2.1 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+333 silly install write writing supports-color 2.0.0 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+334 silly install write writing has-ansi 2.0.0 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+335 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+336 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+337 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+338 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+339 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+340 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp is being purged from base /Users/vivianntunell/Desktop/StartKit
+341 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+342 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi is being purged from base /Users/vivianntunell/Desktop/StartKit
+343 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+344 verbose tar unpack /Users/vivianntunell/.npm/escape-string-regexp/1.0.5/package.tgz
+345 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+346 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp is being purged
+347 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+348 verbose tar unpack /Users/vivianntunell/.npm/strip-ansi/3.0.1/package.tgz
+349 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+350 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi is being purged
+351 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+352 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles is being purged from base /Users/vivianntunell/Desktop/StartKit
+353 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+354 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color is being purged from base /Users/vivianntunell/Desktop/StartKit
+355 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+356 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi is being purged from base /Users/vivianntunell/Desktop/StartKit
+357 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+358 silly gunzTarPerm modes [ '755', '644' ]
+359 silly gunzTarPerm modes [ '755', '644' ]
+360 verbose tar unpack /Users/vivianntunell/.npm/ansi-styles/2.2.1/package.tgz
+361 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+362 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles is being purged
+363 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+364 verbose tar unpack /Users/vivianntunell/.npm/supports-color/2.0.0/package.tgz
+365 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+366 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color is being purged
+367 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+368 verbose tar unpack /Users/vivianntunell/.npm/has-ansi/2.0.0/package.tgz
+369 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+370 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi is being purged
+371 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+372 silly gunzTarPerm modes [ '755', '644' ]
+373 silly gunzTarPerm modes [ '755', '644' ]
+374 silly gunzTarPerm modes [ '755', '644' ]
+375 silly gunzTarPerm extractEntry package.json
+376 silly gunzTarPerm extractEntry package.json
+377 silly gunzTarPerm extractEntry index.js
+378 silly gunzTarPerm extractEntry license
+379 silly gunzTarPerm extractEntry index.js
+380 silly gunzTarPerm extractEntry license
+381 silly gunzTarPerm extractEntry readme.md
+382 silly gunzTarPerm extractEntry readme.md
+383 silly gunzTarPerm extractEntry package.json
+384 silly gunzTarPerm extractEntry package.json
+385 silly gunzTarPerm extractEntry package.json
+386 silly gunzTarPerm extractEntry index.js
+387 silly gunzTarPerm extractEntry license
+388 silly gunzTarPerm extractEntry index.js
+389 silly gunzTarPerm extractEntry license
+390 silly gunzTarPerm extractEntry index.js
+391 silly gunzTarPerm extractEntry license
+392 silly gunzTarPerm extractEntry readme.md
+393 silly gunzTarPerm extractEntry readme.md
+394 silly gunzTarPerm extractEntry readme.md
+395 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp/package.json
+396 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/package.json
+397 info preinstall escape-string-regexp@1.0.5
+398 info preinstall strip-ansi@3.0.1
+399 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp/package.json
+400 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/package.json
+401 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp/package.json
+402 silly prepareForInstallMany adding ansi-regex@^2.0.0 from strip-ansi dependencies
+403 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/package.json
+404 silly install resolved []
+405 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+406 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+407 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/package.json
+408 silly cache add args [ 'ansi-regex@^2.0.0', null ]
+409 verbose cache add spec ansi-regex@^2.0.0
+410 silly cache add parsed spec Result {
+410 silly cache add   raw: 'ansi-regex@^2.0.0',
+410 silly cache add   scope: null,
+410 silly cache add   name: 'ansi-regex',
+410 silly cache add   rawSpec: '^2.0.0',
+410 silly cache add   spec: '>=2.0.0 <3.0.0',
+410 silly cache add   type: 'range' }
+411 silly addNamed ansi-regex@>=2.0.0 <3.0.0
+412 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for ansi-regex
+413 silly addNameRange { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: false }
+414 silly mapToRegistry name ansi-regex
+415 silly mapToRegistry using default registry
+416 silly mapToRegistry registry https://registry.npmjs.org/
+417 silly mapToRegistry data Result {
+417 silly mapToRegistry   raw: 'ansi-regex',
+417 silly mapToRegistry   scope: null,
+417 silly mapToRegistry   name: 'ansi-regex',
+417 silly mapToRegistry   rawSpec: '',
+417 silly mapToRegistry   spec: 'latest',
+417 silly mapToRegistry   type: 'tag' }
+418 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+419 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex not in flight; fetching
+420 info linkStuff escape-string-regexp@1.0.5
+421 silly linkStuff escape-string-regexp@1.0.5 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules as its parent node_modules
+422 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color/package.json
+423 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles/package.json
+424 info preinstall has-ansi@2.0.0
+425 info preinstall supports-color@2.0.0
+426 info preinstall ansi-styles@2.2.1
+427 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/package.json
+428 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color/package.json
+429 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles/package.json
+430 verbose linkBins escape-string-regexp@1.0.5
+431 verbose linkMans escape-string-regexp@1.0.5
+432 verbose rebuildBundles escape-string-regexp@1.0.5
+433 silly prepareForInstallMany adding ansi-regex@^2.0.0 from has-ansi dependencies
+434 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/package.json
+435 info install escape-string-regexp@1.0.5
+436 info postinstall escape-string-regexp@1.0.5
+437 verbose unlock done using /Users/vivianntunell/.npm/_locks/escape-string-regexp-c1d9ec9b534e2cfa.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/escape-string-regexp
+438 verbose request uri https://registry.npmjs.org/ansi-regex
+439 verbose request no auth needed
+440 info attempt registry request try #1 at 00:45:40
+441 verbose etag "BN63D3KK8WIQW515ZAUE2LOAL"
+442 http request GET https://registry.npmjs.org/ansi-regex
+443 silly cache add args [ 'ansi-regex@^2.0.0', null ]
+444 verbose cache add spec ansi-regex@^2.0.0
+445 silly cache add parsed spec Result {
+445 silly cache add   raw: 'ansi-regex@^2.0.0',
+445 silly cache add   scope: null,
+445 silly cache add   name: 'ansi-regex',
+445 silly cache add   rawSpec: '^2.0.0',
+445 silly cache add   spec: '>=2.0.0 <3.0.0',
+445 silly cache add   type: 'range' }
+446 silly addNamed ansi-regex@>=2.0.0 <3.0.0
+447 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for ansi-regex
+448 silly addNameRange { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: false }
+449 silly mapToRegistry name ansi-regex
+450 silly mapToRegistry using default registry
+451 silly mapToRegistry registry https://registry.npmjs.org/
+452 silly mapToRegistry data Result {
+452 silly mapToRegistry   raw: 'ansi-regex',
+452 silly mapToRegistry   scope: null,
+452 silly mapToRegistry   name: 'ansi-regex',
+452 silly mapToRegistry   rawSpec: '',
+452 silly mapToRegistry   spec: 'latest',
+452 silly mapToRegistry   type: 'tag' }
+453 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+454 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex already in flight; waiting
+455 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color/package.json
+456 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles/package.json
+457 silly install resolved []
+458 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+459 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+460 silly install resolved []
+461 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+462 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+463 info linkStuff supports-color@2.0.0
+464 silly linkStuff supports-color@2.0.0 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules as its parent node_modules
+465 info linkStuff ansi-styles@2.2.1
+466 silly linkStuff ansi-styles@2.2.1 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules as its parent node_modules
+467 verbose linkBins supports-color@2.0.0
+468 verbose linkMans supports-color@2.0.0
+469 verbose rebuildBundles supports-color@2.0.0
+470 verbose linkBins ansi-styles@2.2.1
+471 verbose linkMans ansi-styles@2.2.1
+472 verbose rebuildBundles ansi-styles@2.2.1
+473 info install supports-color@2.0.0
+474 info install ansi-styles@2.2.1
+475 info postinstall supports-color@2.0.0
+476 info postinstall ansi-styles@2.2.1
+477 verbose unlock done using /Users/vivianntunell/.npm/_locks/supports-color-1a31bdf41d74d512.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/supports-color
+478 verbose unlock done using /Users/vivianntunell/.npm/_locks/ansi-styles-ecd6a2d9e7c71049.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/ansi-styles
+479 http 304 https://registry.npmjs.org/ansi-regex
+480 verbose headers { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+480 verbose headers   via: '1.1 varnish',
+480 verbose headers   'cache-control': 'max-age=300',
+480 verbose headers   etag: '"BN63D3KK8WIQW515ZAUE2LOAL"',
+480 verbose headers   age: '241',
+480 verbose headers   connection: 'keep-alive',
+480 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+480 verbose headers   'x-cache': 'HIT',
+480 verbose headers   'x-cache-hits': '4',
+480 verbose headers   'x-timer': 'S1466462739.841422,VS0,VE0',
+480 verbose headers   vary: 'Accept-Encoding' }
+481 silly get cb [ 304,
+481 silly get   { date: 'Mon, 20 Jun 2016 22:45:39 GMT',
+481 silly get     via: '1.1 varnish',
+481 silly get     'cache-control': 'max-age=300',
+481 silly get     etag: '"BN63D3KK8WIQW515ZAUE2LOAL"',
+481 silly get     age: '241',
+481 silly get     connection: 'keep-alive',
+481 silly get     'x-served-by': 'cache-ams4123-AMS',
+481 silly get     'x-cache': 'HIT',
+481 silly get     'x-cache-hits': '4',
+481 silly get     'x-timer': 'S1466462739.841422,VS0,VE0',
+481 silly get     vary: 'Accept-Encoding' } ]
+482 verbose etag https://registry.npmjs.org/ansi-regex from cache
+483 verbose get saving ansi-regex to /Users/vivianntunell/.npm/registry.npmjs.org/ansi-regex/.cache.json
+484 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+485 silly addNameRange number 2 { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: true }
+486 silly addNameRange versions [ 'ansi-regex',
+486 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '1.0.0', '1.1.0', '1.1.1', '2.0.0' ] ]
+487 silly addNamed ansi-regex@2.0.0
+488 verbose addNamed "2.0.0" is a plain semver version for ansi-regex
+489 silly addNameRange number 2 { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: true }
+490 silly addNameRange versions [ 'ansi-regex',
+490 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '1.0.0', '1.1.0', '1.1.1', '2.0.0' ] ]
+491 silly addNamed ansi-regex@2.0.0
+492 verbose addNamed "2.0.0" is a plain semver version for ansi-regex
+493 silly cache afterAdd ansi-regex@2.0.0
+494 verbose afterAdd /Users/vivianntunell/.npm/ansi-regex/2.0.0/package/package.json not in flight; writing
+495 verbose correctMkdir /Users/vivianntunell/.npm correctMkdir not in flight; initializing
+496 silly cache afterAdd ansi-regex@2.0.0
+497 verbose afterAdd /Users/vivianntunell/.npm/ansi-regex/2.0.0/package/package.json already in flight; not writing
+498 verbose afterAdd /Users/vivianntunell/.npm/ansi-regex/2.0.0/package/package.json written
+499 silly install resolved [ { name: 'ansi-regex',
+499 silly install resolved     version: '2.0.0',
+499 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+499 silly install resolved     license: 'MIT',
+499 silly install resolved     repository:
+499 silly install resolved      { type: 'git',
+499 silly install resolved        url: 'git+https://github.com/sindresorhus/ansi-regex.git' },
+499 silly install resolved     author:
+499 silly install resolved      { name: 'Sindre Sorhus',
+499 silly install resolved        email: 'sindresorhus@gmail.com',
+499 silly install resolved        url: 'sindresorhus.com' },
+499 silly install resolved     maintainers: [ [Object], [Object] ],
+499 silly install resolved     engines: { node: '>=0.10.0' },
+499 silly install resolved     scripts:
+499 silly install resolved      { test: 'mocha test/test.js',
+499 silly install resolved        'view-supported': 'node test/viewCodes.js' },
+499 silly install resolved     files: [ 'index.js' ],
+499 silly install resolved     keywords:
+499 silly install resolved      [ 'ansi',
+499 silly install resolved        'styles',
+499 silly install resolved        'color',
+499 silly install resolved        'colour',
+499 silly install resolved        'colors',
+499 silly install resolved        'terminal',
+499 silly install resolved        'console',
+499 silly install resolved        'cli',
+499 silly install resolved        'string',
+499 silly install resolved        'tty',
+499 silly install resolved        'escape',
+499 silly install resolved        'formatting',
+499 silly install resolved        'rgb',
+499 silly install resolved        '256',
+499 silly install resolved        'shell',
+499 silly install resolved        'xterm',
+499 silly install resolved        'command-line',
+499 silly install resolved        'text',
+499 silly install resolved        'regex',
+499 silly install resolved        'regexp',
+499 silly install resolved        're',
+499 silly install resolved        'match',
+499 silly install resolved        'test',
+499 silly install resolved        'find',
+499 silly install resolved        'pattern' ],
+499 silly install resolved     devDependencies: { mocha: '*' },
+499 silly install resolved     gitHead: '57c3f2941a73079fa8b081e02a522e3d29913e2f',
+499 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-regex/issues' },
+499 silly install resolved     homepage: 'https://github.com/sindresorhus/ansi-regex',
+499 silly install resolved     _id: 'ansi-regex@2.0.0',
+499 silly install resolved     _shasum: 'c5061b6e0ef8a81775e50f5d66151bf6bf371107',
+499 silly install resolved     _from: 'ansi-regex@>=2.0.0 <3.0.0',
+499 silly install resolved     _npmVersion: '2.11.2',
+499 silly install resolved     _nodeVersion: '0.12.5',
+499 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+499 silly install resolved     dist:
+499 silly install resolved      { shasum: 'c5061b6e0ef8a81775e50f5d66151bf6bf371107',
+499 silly install resolved        tarball: 'http://registry.npmjs.org/ansi-regex/-/ansi-regex-2.0.0.tgz' },
+499 silly install resolved     directories: {},
+499 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.0.0.tgz',
+499 silly install resolved     readme: 'ERROR: No README data found!' } ]
+500 info install ansi-regex@2.0.0 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+501 info installOne ansi-regex@2.0.0
+502 verbose installOne of ansi-regex to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi not in flight; installing
+503 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+504 silly install resolved [ { name: 'ansi-regex',
+504 silly install resolved     version: '2.0.0',
+504 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+504 silly install resolved     license: 'MIT',
+504 silly install resolved     repository:
+504 silly install resolved      { type: 'git',
+504 silly install resolved        url: 'git+https://github.com/sindresorhus/ansi-regex.git' },
+504 silly install resolved     author:
+504 silly install resolved      { name: 'Sindre Sorhus',
+504 silly install resolved        email: 'sindresorhus@gmail.com',
+504 silly install resolved        url: 'sindresorhus.com' },
+504 silly install resolved     maintainers: [ [Object], [Object] ],
+504 silly install resolved     engines: { node: '>=0.10.0' },
+504 silly install resolved     scripts:
+504 silly install resolved      { test: 'mocha test/test.js',
+504 silly install resolved        'view-supported': 'node test/viewCodes.js' },
+504 silly install resolved     files: [ 'index.js' ],
+504 silly install resolved     keywords:
+504 silly install resolved      [ 'ansi',
+504 silly install resolved        'styles',
+504 silly install resolved        'color',
+504 silly install resolved        'colour',
+504 silly install resolved        'colors',
+504 silly install resolved        'terminal',
+504 silly install resolved        'console',
+504 silly install resolved        'cli',
+504 silly install resolved        'string',
+504 silly install resolved        'tty',
+504 silly install resolved        'escape',
+504 silly install resolved        'formatting',
+504 silly install resolved        'rgb',
+504 silly install resolved        '256',
+504 silly install resolved        'shell',
+504 silly install resolved        'xterm',
+504 silly install resolved        'command-line',
+504 silly install resolved        'text',
+504 silly install resolved        'regex',
+504 silly install resolved        'regexp',
+504 silly install resolved        're',
+504 silly install resolved        'match',
+504 silly install resolved        'test',
+504 silly install resolved        'find',
+504 silly install resolved        'pattern' ],
+504 silly install resolved     devDependencies: { mocha: '*' },
+504 silly install resolved     gitHead: '57c3f2941a73079fa8b081e02a522e3d29913e2f',
+504 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-regex/issues' },
+504 silly install resolved     homepage: 'https://github.com/sindresorhus/ansi-regex',
+504 silly install resolved     _id: 'ansi-regex@2.0.0',
+504 silly install resolved     _shasum: 'c5061b6e0ef8a81775e50f5d66151bf6bf371107',
+504 silly install resolved     _from: 'ansi-regex@>=2.0.0 <3.0.0',
+504 silly install resolved     _npmVersion: '2.11.2',
+504 silly install resolved     _nodeVersion: '0.12.5',
+504 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+504 silly install resolved     dist:
+504 silly install resolved      { shasum: 'c5061b6e0ef8a81775e50f5d66151bf6bf371107',
+504 silly install resolved        tarball: 'http://registry.npmjs.org/ansi-regex/-/ansi-regex-2.0.0.tgz' },
+504 silly install resolved     directories: {},
+504 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.0.0.tgz',
+504 silly install resolved     readme: 'ERROR: No README data found!' } ]
+505 info install ansi-regex@2.0.0 into /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+506 info installOne ansi-regex@2.0.0
+507 verbose installOne of ansi-regex to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi not in flight; installing
+508 verbose correctMkdir /Users/vivianntunell/.npm/_locks correctMkdir not in flight; initializing
+509 verbose lock using /Users/vivianntunell/.npm/_locks/ansi-regex-7480d9052d54103f.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+510 verbose lock using /Users/vivianntunell/.npm/_locks/ansi-regex-b6ade5171910de32.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+511 silly install write writing ansi-regex 2.0.0 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+512 silly install write writing ansi-regex 2.0.0 to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+513 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+514 verbose unbuild node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+515 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex is being purged from base /Users/vivianntunell/Desktop/StartKit
+516 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+517 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex is being purged from base /Users/vivianntunell/Desktop/StartKit
+518 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+519 verbose tar unpack /Users/vivianntunell/.npm/ansi-regex/2.0.0/package.tgz
+520 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+521 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex is being purged
+522 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+523 verbose tar unpack /Users/vivianntunell/.npm/ansi-regex/2.0.0/package.tgz
+524 verbose tar unpacking to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+525 silly gentlyRm /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex is being purged
+526 verbose gentlyRm don't care about contents; nuking /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+527 silly gunzTarPerm modes [ '755', '644' ]
+528 silly gunzTarPerm modes [ '755', '644' ]
+529 silly gunzTarPerm extractEntry package.json
+530 silly gunzTarPerm extractEntry package.json
+531 silly gunzTarPerm extractEntry index.js
+532 silly gunzTarPerm extractEntry license
+533 silly gunzTarPerm extractEntry index.js
+534 silly gunzTarPerm extractEntry license
+535 silly gunzTarPerm extractEntry readme.md
+536 silly gunzTarPerm extractEntry readme.md
+537 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json
+538 verbose write writing to /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json
+539 info preinstall ansi-regex@2.0.0
+540 info preinstall ansi-regex@2.0.0
+541 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json
+542 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json
+543 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json
+544 verbose readDependencies loading dependencies from /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json
+545 silly install resolved []
+546 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+547 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+548 silly install resolved []
+549 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+550 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+551 info linkStuff ansi-regex@2.0.0
+552 silly linkStuff ansi-regex@2.0.0 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules as its parent node_modules
+553 info linkStuff ansi-regex@2.0.0
+554 silly linkStuff ansi-regex@2.0.0 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules as its parent node_modules
+555 verbose linkBins ansi-regex@2.0.0
+556 verbose linkMans ansi-regex@2.0.0
+557 verbose rebuildBundles ansi-regex@2.0.0
+558 info install ansi-regex@2.0.0
+559 verbose linkBins ansi-regex@2.0.0
+560 verbose linkMans ansi-regex@2.0.0
+561 verbose rebuildBundles ansi-regex@2.0.0
+562 info postinstall ansi-regex@2.0.0
+563 info install ansi-regex@2.0.0
+564 info postinstall ansi-regex@2.0.0
+565 verbose unlock done using /Users/vivianntunell/.npm/_locks/ansi-regex-b6ade5171910de32.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+566 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+567 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+568 verbose unlock done using /Users/vivianntunell/.npm/_locks/ansi-regex-7480d9052d54103f.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+569 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+570 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+571 info linkStuff has-ansi@2.0.0
+572 silly linkStuff has-ansi@2.0.0 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules as its parent node_modules
+573 info linkStuff strip-ansi@3.0.1
+574 silly linkStuff strip-ansi@3.0.1 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules as its parent node_modules
+575 verbose linkBins has-ansi@2.0.0
+576 verbose linkMans has-ansi@2.0.0
+577 verbose rebuildBundles has-ansi@2.0.0
+578 verbose rebuildBundles [ 'ansi-regex' ]
+579 info install has-ansi@2.0.0
+580 verbose linkBins strip-ansi@3.0.1
+581 verbose linkMans strip-ansi@3.0.1
+582 verbose rebuildBundles strip-ansi@3.0.1
+583 info postinstall has-ansi@2.0.0
+584 verbose rebuildBundles [ 'ansi-regex' ]
+585 info install strip-ansi@3.0.1
+586 info postinstall strip-ansi@3.0.1
+587 verbose unlock done using /Users/vivianntunell/.npm/_locks/has-ansi-bf401862a46453b7.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/has-ansi
+588 verbose unlock done using /Users/vivianntunell/.npm/_locks/strip-ansi-7364e25a570e970d.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk/node_modules/strip-ansi
+589 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+590 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+591 info linkStuff chalk@1.1.3
+592 silly linkStuff chalk@1.1.3 has /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules as its parent node_modules
+593 verbose linkBins chalk@1.1.3
+594 verbose linkMans chalk@1.1.3
+595 verbose rebuildBundles chalk@1.1.3
+596 verbose rebuildBundles [ 'ansi-styles',
+596 verbose rebuildBundles   'escape-string-regexp',
+596 verbose rebuildBundles   'has-ansi',
+596 verbose rebuildBundles   'strip-ansi',
+596 verbose rebuildBundles   'supports-color' ]
+597 info install chalk@1.1.3
+598 info postinstall chalk@1.1.3
+599 verbose unlock done using /Users/vivianntunell/.npm/_locks/chalk-49033352cfe51747.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade/node_modules/chalk
+600 verbose about to build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+601 info build /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+602 info linkStuff grunt-contrib-jade@1.0.0
+603 silly linkStuff grunt-contrib-jade@1.0.0 has /Users/vivianntunell/Desktop/StartKit/node_modules as its parent node_modules
+604 verbose linkBins grunt-contrib-jade@1.0.0
+605 verbose linkMans grunt-contrib-jade@1.0.0
+606 verbose rebuildBundles grunt-contrib-jade@1.0.0
+607 verbose rebuildBundles [ 'chalk' ]
+608 info install grunt-contrib-jade@1.0.0
+609 info postinstall grunt-contrib-jade@1.0.0
+610 verbose unlock done using /Users/vivianntunell/.npm/_locks/grunt-contrib-jade-cc60185e8a0a57b0.lock for /Users/vivianntunell/Desktop/StartKit/node_modules/grunt-contrib-jade
+611 verbose validateInstall loading /Users/vivianntunell/Desktop/StartKit/package.json for validation
+612 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+612 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+612 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+612 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+612 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+612 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+612 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+612 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+612 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+612 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+612 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+613 verbose cwd /Users/vivianntunell/Desktop/StartKit
+614 error Darwin 14.5.0
+615 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-contrib-jade" "--save-dev"
+616 error node v4.4.5
+617 error npm  v2.15.5
+618 error code EPEERINVALID
+619 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+619 error peerinvalid Peer grunt-jade@0.5.1 wants grunt@~0.4.0
+619 error peerinvalid Peer grunt-contrib-concat@1.0.1 wants grunt@>=0.4.0
+620 verbose exit [ 1, true ]
