@@ -3,10 +3,11 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-ng-app="app">
   <!--<![endif]-->
+  <!-- Modernizr Implementation -->
   <head>
-    <title>Start Kit 2.0</title>
+    <title>Insert Dynamic Title</title>
     <base href="/">
     <meta charset="utf-8">
     <meta name="author" content="Emil Olsson">
@@ -25,8 +26,12 @@
   </head>
   <body data-ng-controller="mainController">
 
+    <!-- Loader Container -->
+    <div class="loader"></div>
+    <!-- End Loader Container -->
+
     <!-- Page Container -->
-    <div data-ng-view="" data-page="{{ title | lowercase }}"></div>
+    <div class="views" data-ng-view="" data-page="{{ title | lowercase }}"></div>
     <!-- End Page Container -->
 
     <!-- Initial Scripts  -->
