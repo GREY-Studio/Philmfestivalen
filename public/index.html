@@ -17,22 +17,26 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/stylesheets/style.css" title="Style CSS" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Forum">
-    <meta property="og:site_name" content="Forum">
-    <meta property="og:description" content="Forum">
+    <meta property="og:title" content="Portafolio">
+    <meta property="og:site_name" content="Portafolio">
+    <meta property="og:description" content="Portafolio">
     <meta name="og:type" content="website">
     <meta name="og:url" content="">
     <meta name="og:image" content="http://.jpg">
   </head>
   <body data-ng-controller="mainController">
 
-    <!-- Loader Container -->
+    <!-- Loader Container
     <div class="loader"></div>
-    <!-- End Loader Container -->
+     End Loader Container -->
 
-    <!-- Page Container -->
+    <!-- rootNode Container -->
     <div class="views" data-ng-view="" data-page="{{ title | lowercase }}"></div>
-    <!-- End Page Container -->
+    <!-- End rootNode Container -->
+
+    <div class="WebGL">
+      <!-- Canvas Injected Here -->
+    </div>
 
     <!-- Initial Scripts  -->
     <script src="/static/requirejs/require.js" type="text/javascript" data-main="components/javascripts/main.js"></script>

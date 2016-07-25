@@ -14,6 +14,9 @@ require.config({
     'angular-route': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min', '/static/angular-route/angular-route.min'],
     'angular-animate': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min', '/static/angular-animate/angular-animate.min'],
     'preload': ['https://code.createjs.com/preloadjs-0.6.2.min', '/static/PreloadJS/lib/preloadjs-0.6.2.min'],
+    'three': ['https://ajax.googleapis.com/ajax/libs/threejs/r76/three.min', '/static/three.js/build/three.min'],
+
+    'threeConf': ['/components/javascripts/core/threeConf'],
 
     // Load the modules
     'coreModule': '/components/javascripts/core/coreModule',
@@ -35,12 +38,16 @@ require.config({
       'deps': [ 'angular' ]
     },
 
+    'three': {
+      'deps': [ 'jquery' ]
+    },
+
     'themeModule': {
       'deps': [ 'angular-route' ]
     },
 
     'coreModule': {
-      'deps': [ 'angular-route', 'angular-animate', 'themeModule' ]
+      'deps': [ 'angular-route', 'angular-animate', 'themeModule', 'preload', 'three', 'threeConf' ]
     }
 
   }

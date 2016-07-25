@@ -1,4 +1,6 @@
-/* Font CSS */
+/* ---------------------------------- */
+/* FONT SASS                          */
+/* ---------------------------------- */
 
 /* cyrillic-ext */
 @font-face
@@ -144,10 +146,18 @@
   src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url(http://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIAAkx2KIoCAYIUYRcgdW-dU.woff2) format('woff2')
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 
-/* Main CSS */
+/* ---------------------------------- */
+/* MAIN SASS                          */
+/* ---------------------------------- */
+
+/* Variables & Imports */
+
+$primary: #171719
+
+/* DOM SASS */
 
 html, body
-  background-color: #fff
+  background: $primary
   overflow: hidden
   margin: 0
   padding: 0
@@ -157,15 +167,34 @@ html, body
   width: 100%
   overflow: hidden
 
-
 :not(body)
   background-repeat: no-repeat
   background-position: 50%
   background-size: cover
-
 
 *, :after, :before
   box-sizing: inherit
 
 *
   border-collapse: inherit
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-user-drag: none
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1,h2,h3,h4,h5
+  margin: 0
+
+.group
+  zoom: 1
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both

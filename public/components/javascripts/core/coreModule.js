@@ -78,7 +78,7 @@ define(['core/runners/logRunner'], function(logRunner) {
   // Bootstrap the application to the document (inititate)
   require(['core/controllerReferences'], function(references) {
       require(references, function() {
-        angular.bootstrap(document, ['coreModule']);
+        angular.bootstrap( document, ['coreModule'] );
       });
   });
 
