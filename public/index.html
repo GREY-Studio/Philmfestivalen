@@ -5,21 +5,20 @@
 <!--[if gt IE 8]><!-->
 <html lang="en" class="no-js" data-ng-app="app">
   <!--<![endif]-->
-  <!-- Modernizr Implementation -->
   <head>
-    <title>Insert Dynamic Title</title>
+    <title>Philmfestivalen | Capture your imagination</title>
     <base href="/">
     <meta charset="utf-8">
-    <meta name="author" content="Emil Olsson">
+    <meta name="author" content="Emil Olsson PRINT">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/stylesheets/style.css" title="Style CSS" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Portafolio">
-    <meta property="og:site_name" content="Portafolio">
-    <meta property="og:description" content="Portafolio">
+    <meta property="og:title" content="Philmfestivalen">
+    <meta property="og:site_name" content="Philmfestivalen">
+    <meta property="og:description" content="Philmfestivalen">
     <meta name="og:type" content="website">
     <meta name="og:url" content="">
     <meta name="og:image" content="http://.jpg">
@@ -30,16 +29,87 @@
     <div class="loader"></div>
      End Loader Container -->
 
+    <!-- Header + Navigation -->
+    <header class="ejo-header">
+      <div class="ejo-header-con">
+        <a class="ejo-logo" href="/">
+          <!--<span>Apply</span>-->
+          <!--<span>Festivalen</span>-->
+        </a>
+        <nav class="ejo-navigation">
+          <ul>
+            <!-- Inject Menu Here -->
+            <li data-ng-repeat="items in item" data-active="{{items.active}}">
+              <a href="{{items.href}}">
+                <span>{{items.name}}</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header + Navigation -->
+
+    <div class="ejo-WebGL-wrapper">
+      <div class="ejo-WebGL-container">
+        <div class="ejo-WebGL-renderer">
+          <div class="ejo-WebGL">
+            <!-- Canvas Injected Here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- rootNode Container -->
-    <div class="views" data-ng-view="" data-page="{{ title | lowercase }}"></div>
+    <main class="ejo-views" data-ng-view="" data-page="{{ title | lowercase }}"></main>
     <!-- End rootNode Container -->
 
-    <div class="WebGL">
-      <!-- Canvas Injected Here -->
+    <!-- Header Footer -->
+    <div class="ejo-footer">
+      <div class="ejo-footer-wrapper">
+        <div class="ejo-event">
+          <p class="ejo-event-date">
+            {{date}}
+          </p>
+          <p class="ejo-event-location">
+            {{loca}}
+          </p>
+        </div>
+        <div class="ejo-button">
+          <a href="/sign">
+            <span>Compete</span>
+          </a>
+        </div>
+      </div>
     </div>
+    <!-- End Header Footer -->
+
+    <!-- Footer -->
+    <footer class="ejo-base-footer">
+      <div class="ejo-base-container">
+        <div class="ejo-base-left">
+          <p>Developed in coalition between </p>
+          <a href="https://www.facebook.com/print.maskinsektionen/" target="_blank" class="ejo-print">
+            <div></div>
+          </a>
+          <p> & </p>
+          <a href="/" class="ejo-philm">
+            <div></div>
+          </a>
+        </div>
+        <div class="ejo-base-right">
+          <p>2017 PRINT | </p>
+          <a href="mailto:">Contact Us</a>
+          <p> | </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Initial Scripts  -->
     <script src="/static/requirejs/require.js" type="text/javascript" data-main="components/javascripts/main.js"></script>
+    <script src="https://use.typekit.net/kbb1ajm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <!-- End Initial Scripts -->
 
   </body>

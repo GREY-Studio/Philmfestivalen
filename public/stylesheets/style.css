@@ -145,21 +145,62 @@
   src: local("Playfair Display Black"), local("PlayfairDisplay-Black"), url(http://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIAAkx2KIoCAYIUYRcgdW-dU.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
+@font-face {
+  font-family: 'quarto';
+  font-style: normal;
+  src: url("../fonts/ejo-quarto.ttf"); }
+
+@font-face {
+  font-family: 'onramp';
+  font-style: normal;
+  src: url("../fonts/ejo-onramp.ttf"); }
+
+@font-face {
+  font-family: 'butler-b';
+  font-style: normal;
+  src: url("../fonts/ejo-butler-b.woff"); }
+
+@font-face {
+  font-family: 'butler-r';
+  font-style: normal;
+  src: url("../fonts/ejo-butler-r.otf"); }
+
+@font-face {
+  font-family: 'butler-m';
+  font-style: normal;
+  src: url("../fonts/ejo-butler-m.otf"); }
+
+@font-face {
+  font-family: 'butler-l';
+  font-style: normal;
+  src: url("../fonts/ejo-butler-l.otf"); }
+
+@font-face {
+  font-family: 'opensans-l';
+  font-style: normal;
+  src: url("../fonts/ejo-opensans-l.ttf"); }
+
 /* ---------------------------------- */
 /* MAIN SASS                          */
 /* ---------------------------------- */
 /* Variables & Imports */
 /* DOM SASS */
 html, body {
-  background: #171719;
-  overflow: hidden;
+  background: #370e69;
+  overflow-x: hidden;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#370e69), to(#0f0021));
+  background: -moz-linear-gradient(top, #370e69, #0f0021);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#370e69', endColorstr='#0f0021');
+  height: 4250px; }
 
 .app, .layout, .wrapper {
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 :not(body) {
   background-repeat: no-repeat;
@@ -183,6 +224,16 @@ html, body {
 h1, h2, h3, h4, h5 {
   margin: 0; }
 
+.ejo-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 .group {
   zoom: 1; }
   .group:before {
@@ -192,5 +243,1165 @@ h1, h2, h3, h4, h5 {
     content: "";
     display: table;
     clear: both; }
+
+.ejo-WebGL-wrapper {
+  height: 100vh;
+  z-index: 1; }
+  .ejo-WebGL-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2007px;
+    width: 100%;
+    background-image: url("../images/ejo-trame.png");
+    background-position: top;
+    background-repeat: repeat-x;
+    pointer-events: none;
+    z-index: 30; }
+  .ejo-WebGL-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    height: 1063px;
+    width: 1440px;
+    margin-left: -700px;
+    background-image: url("../images/ejo-galaxy-header-home.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 0;
+    opacity: 0.8; }
+
+.ejo-WebGL-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100vh + 1810px);
+  width: 100%;
+  pointer-events: none;
+  z-index: 0; }
+
+.ejo-WebGL-renderer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 0; }
+  .ejo-WebGL-renderer::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    height: 1767px;
+    width: 1168px;
+    margin-top: 300px;
+    background-image: url("../images/ejo-bubble-shadow.png");
+    opacity: .8;
+    z-index: -2; }
+  .ejo-WebGL-renderer::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    height: 100%;
+    width: 1134px;
+    min-height: 1000px;
+    margin-left: -50px;
+    margin-top: -100px;
+    background-image: url("../images/ejo-rainbow.png");
+    background-size: auto 100%;
+    opacity: .5;
+    z-index: -1; }
+
+.ejo-WebGL {
+  position: fixed; }
+
+.ejo-views {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0; }
+
+/* ---------------------------------- */
+/* END MAIN SASS                      */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* HEADER SASS                        */
+/* ---------------------------------- */
+header.ejo-header {
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  z-index: 3;
+  pointer-events: auto; }
+
+.ejo-header-con {
+  min-height: 100%;
+  padding: 0 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.ejo-navigation {
+  position: relative;
+  font-size: 0.9rem; }
+  .ejo-navigation ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: left; }
+    .ejo-navigation ul [data-active="false"] {
+      border: 2px solid #fff;
+      height: 35px;
+      width: 35px;
+      position: relative;
+      top: -7px;
+      border-radius: 50%;
+      margin-left: 18px; }
+      .ejo-navigation ul [data-active="false"] a {
+        font-size: 1px;
+        padding: 40px 30px; }
+    .ejo-navigation ul li {
+      display: inline-block;
+      /*&:last-child
+        background: $yellow
+        padding: 4px
+        -webkit-transform: skew(-5deg)
+        -moz-transform: skew(-5deg)
+        -o-transform: skew(-5deg)
+        transform: skew(-5deg)
+        overflow:hidden*/ }
+      .ejo-navigation ul li a {
+        padding: 1.4375rem 1.5625rem;
+        text-decoration: none;
+        font-size: 0.92rem; }
+        .ejo-navigation ul li a span {
+          font-family: proxima-nova, sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          color: #fff; }
+
+.ejo-logo {
+  z-index: 4;
+  text-transform: uppercase;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.6rem;
+  letter-spacing: 0.3rem;
+  position: relative; }
+
+/* ---------------------------------- */
+/* END HEADER SASS                    */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* HEADER FOOTER SASS                 */
+/* ---------------------------------- */
+.ejo-footer {
+  position: absolute;
+  bottom: 45px;
+  width: 100%; }
+  .ejo-footer .ejo-footer-wrapper {
+    padding: 0px 65px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+.ejo-event {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff; }
+  .ejo-event p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .ejo-event .ejo-event-date {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    letter-spacing: 5px; }
+  .ejo-event .ejo-event-location {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5); }
+
+.ejo-button {
+  z-index: 6;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #370e69;
+  bottom: 10px;
+  right: 50px;
+  position: absolute; }
+  .ejo-button::before, .ejo-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  .ejo-button::before {
+    background: #0ff;
+    z-index: -1; }
+  .ejo-button::after {
+    background: #f0f;
+    z-index: -2; }
+  .ejo-button a {
+    font-size: 0.92rem;
+    padding: 10px 40px;
+    text-decoration: none;
+    background: #fff;
+    -webkit-transition: -webkit-noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: -webkit-noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-filter 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .ejo-button a span {
+      color: #370e69; }
+
+/* ---------------------------------- */
+/* END HEADER FOOTER SASS             */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* HOME SASS                          */
+/* ---------------------------------- */
+.ejo-home-wrap {
+  height: 4250px;
+  width: 100%;
+  top: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.ejo-noice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 90; }
+  .ejo-noice::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    height: 300%;
+    width: 300%;
+    background: url("../images/ejo-noise.png");
+    pointer-events: none;
+    display: block;
+    opacity: .7;
+    -webkit-animation: grain 2s steps(10) infinite;
+    animation: grain 2s steps(10) infinite;
+    will-change: transform; }
+
+[data-page="home"] .ejo-noice::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../images/ejo-noise.png") repeat 0 0;
+  -webkit-animation: none;
+  animation: none; }
+
+.ejo-home-header {
+  width: 100%;
+  text-align: center;
+  top: 10px;
+  position: absolute; }
+
+.ejo-hero-message {
+  font-family: butler-b;
+  font-size: 8rem;
+  letter-spacing: 0.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  top: 10px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%); }
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(45px, 9999px, 61px, 0); }
+  3.33333% {
+    clip: rect(43px, 9999px, 37px, 0); }
+  6.66667% {
+    clip: rect(6px, 9999px, 27px, 0); }
+  10% {
+    clip: rect(16px, 9999px, 1px, 0); }
+  13.33333% {
+    clip: rect(39px, 9999px, 85px, 0); }
+  16.66667% {
+    clip: rect(23px, 9999px, 51px, 0); }
+  20% {
+    clip: rect(98px, 9999px, 25px, 0); }
+  23.33333% {
+    clip: rect(81px, 9999px, 75px, 0); }
+  26.66667% {
+    clip: rect(78px, 9999px, 11px, 0); }
+  30% {
+    clip: rect(27px, 9999px, 95px, 0); }
+  33.33333% {
+    clip: rect(59px, 9999px, 45px, 0); }
+  36.66667% {
+    clip: rect(18px, 9999px, 38px, 0); }
+  40% {
+    clip: rect(25px, 9999px, 99px, 0); }
+  43.33333% {
+    clip: rect(95px, 9999px, 46px, 0); }
+  46.66667% {
+    clip: rect(26px, 9999px, 85px, 0); }
+  50% {
+    clip: rect(58px, 9999px, 18px, 0); }
+  53.33333% {
+    clip: rect(28px, 9999px, 60px, 0); }
+  56.66667% {
+    clip: rect(90px, 9999px, 82px, 0); }
+  60% {
+    clip: rect(44px, 9999px, 43px, 0); }
+  63.33333% {
+    clip: rect(90px, 9999px, 99px, 0); }
+  66.66667% {
+    clip: rect(44px, 9999px, 92px, 0); }
+  70% {
+    clip: rect(66px, 9999px, 27px, 0); }
+  73.33333% {
+    clip: rect(59px, 9999px, 30px, 0); }
+  76.66667% {
+    clip: rect(86px, 9999px, 29px, 0); }
+  80% {
+    clip: rect(73px, 9999px, 13px, 0); }
+  83.33333% {
+    clip: rect(17px, 9999px, 48px, 0); }
+  86.66667% {
+    clip: rect(96px, 9999px, 30px, 0); }
+  90% {
+    clip: rect(87px, 9999px, 34px, 0); }
+  93.33333% {
+    clip: rect(70px, 9999px, 20px, 0); }
+  96.66667% {
+    clip: rect(71px, 9999px, 87px, 0); }
+  100% {
+    clip: rect(25px, 9999px, 46px, 0); } }
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(36px, 9999px, 10px, 0); }
+  3.33333% {
+    clip: rect(16px, 9999px, 63px, 0); }
+  6.66667% {
+    clip: rect(7px, 9999px, 18px, 0); }
+  10% {
+    clip: rect(53px, 9999px, 73px, 0); }
+  13.33333% {
+    clip: rect(57px, 9999px, 1px, 0); }
+  16.66667% {
+    clip: rect(88px, 9999px, 28px, 0); }
+  20% {
+    clip: rect(93px, 9999px, 3px, 0); }
+  23.33333% {
+    clip: rect(19px, 9999px, 69px, 0); }
+  26.66667% {
+    clip: rect(51px, 9999px, 52px, 0); }
+  30% {
+    clip: rect(13px, 9999px, 21px, 0); }
+  33.33333% {
+    clip: rect(23px, 9999px, 79px, 0); }
+  36.66667% {
+    clip: rect(18px, 9999px, 93px, 0); }
+  40% {
+    clip: rect(55px, 9999px, 6px, 0); }
+  43.33333% {
+    clip: rect(22px, 9999px, 27px, 0); }
+  46.66667% {
+    clip: rect(25px, 9999px, 48px, 0); }
+  50% {
+    clip: rect(84px, 9999px, 30px, 0); }
+  53.33333% {
+    clip: rect(96px, 9999px, 97px, 0); }
+  56.66667% {
+    clip: rect(97px, 9999px, 70px, 0); }
+  60% {
+    clip: rect(37px, 9999px, 28px, 0); }
+  63.33333% {
+    clip: rect(18px, 9999px, 69px, 0); }
+  66.66667% {
+    clip: rect(58px, 9999px, 28px, 0); }
+  70% {
+    clip: rect(12px, 9999px, 78px, 0); }
+  73.33333% {
+    clip: rect(32px, 9999px, 49px, 0); }
+  76.66667% {
+    clip: rect(25px, 9999px, 28px, 0); }
+  80% {
+    clip: rect(34px, 9999px, 65px, 0); }
+  83.33333% {
+    clip: rect(85px, 9999px, 8px, 0); }
+  86.66667% {
+    clip: rect(25px, 9999px, 61px, 0); }
+  90% {
+    clip: rect(25px, 9999px, 67px, 0); }
+  93.33333% {
+    clip: rect(16px, 9999px, 8px, 0); }
+  96.66667% {
+    clip: rect(95px, 9999px, 84px, 0); }
+  100% {
+    clip: rect(59px, 9999px, 93px, 0); } }
+
+.ejo-mini-message {
+  font-family: opensans-l;
+  font-size: 0.8rem;
+  color: #fff;
+  padding-top: 20px; }
+
+.ejo-piece {
+  display: block;
+  margin-left: 15px; }
+  .ejo-piece span {
+    position: relative;
+    margin-bottom: 35px;
+    z-index: 3;
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: opacity 2s cubic-bezier(0.23, 1, 0.32, 1); }
+    .ejo-piece span::before {
+      content: attr(data-title);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      visibility: hidden;
+      color: #fff;
+      z-index: -1;
+      overflow: hidden; }
+    .ejo-piece span::after {
+      content: attr(data-title);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      visibility: hidden;
+      color: #fff;
+      z-index: -2;
+      overflow: hidden; }
+  .ejo-piece span.is--showing {
+    opacity: 1; }
+
+.ejo-piece.is-glitched span::before {
+  left: 3px;
+  -webkit-animation: noise-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both, hide 0s 0.3s linear both;
+  animation: noise-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both, hide 0s 0.3s linear both; }
+
+.ejo-piece.is-glitched span::after {
+  left: -3px;
+  -webkit-animation: noise-anim-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both, hide 0s 0.3s linear both;
+  animation: noise-anim-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both, hide 0s 0.3s linear both; }
+
+.ejo-piece.is-glitched span::after, .ejo-piece.is-glitched span::before {
+  visibility: visible; }
+
+.ejo-piece.vertical {
+  text-align: center; }
+
+.ejo-square {
+  position: absolute;
+  width: 600px;
+  height: 90%;
+  border: solid #e3e3e3 2px; }
+
+.ejo-scroll-hint {
+  position: absolute;
+  width: 12px;
+  height: 95px;
+  bottom: 0; }
+
+.ejo-dive-line {
+  height: 60px;
+  position: absolute;
+  width: 6px;
+  border-right: solid 1px #383838;
+  bottom: 0;
+  opacity: 0.4; }
+
+.ejo-dive {
+  height: 12px;
+  width: 12px;
+  position: absolute; }
+
+.ejo-hero-image {
+  position: absolute;
+  height: 80%;
+  width: 400px;
+  top: 0;
+  left: 140px; }
+  .ejo-hero-image .ejo-media {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #383838;
+    opacity: 0.1; }
+  .ejo-hero-image .ejo-decor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #7056A8;
+    bottom: 0; }
+
+/* ---------------------------------- */
+/* END HOME SASS                      */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* SPONSORS SASS                      */
+/* ---------------------------------- */
+.ejo-home-sponsors {
+  width: 100%;
+  position: absolute;
+  top: 800px; }
+
+.ejo-sponsor-wrapper {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 50; }
+
+.ejo-sponsor-lead {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  max-width: 390px;
+  margin-left: auto; }
+
+.ejo-circle {
+  position: relative;
+  width: 245px;
+  height: 245px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1; }
+  .ejo-circle::before, .ejo-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .ejo-circle::before {
+    width: 260px;
+    height: 260px;
+    border: 2px solid rgba(255, 255, 255, 0.2); }
+  .ejo-circle::after {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1); }
+  .ejo-circle a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999; }
+    .ejo-circle a::before, .ejo-circle a::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 260px;
+      width: 260px;
+      content: '';
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+      opacity: 1;
+      -webkit-transition: opacity 2s cubic-bezier(0.23, 1, 0.32, 1), width 2s cubic-bezier(0.23, 1, 0.32, 1), height 2s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: opacity 2s cubic-bezier(0.23, 1, 0.32, 1), width 2s cubic-bezier(0.23, 1, 0.32, 1), height 2s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: opacity 2s cubic-bezier(0.23, 1, 0.32, 1), width 2s cubic-bezier(0.23, 1, 0.32, 1), height 2s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.ejo-circle.is--hovered a::before, .ejo-circle.is--hovered a::after {
+  visibility: visible;
+  opacity: 0; }
+
+.ejo-circle.is--hovered a::before {
+  width: 360px;
+  height: 360px; }
+
+.ejo-circle.is--hovered a::after {
+  width: 330px;
+  height: 330px; }
+
+.ejo-circle-background {
+  width: 190px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+  margin: -25px auto;
+  opacity: 0.9; }
+
+.circle--1 .ejo-circle-background {
+  background: url("../images/ejo-filmpoolnord.png");
+  background-size: cover; }
+
+.circle--2 {
+  margin-left: 190px;
+  margin-top: 140px; }
+  .circle--2 .ejo-circle-background {
+    background: url("../images/ejo-swedbank.png");
+    background-size: cover;
+    width: 130px;
+    height: 20px;
+    margin: -10px auto; }
+
+.circle--3 {
+  margin-left: auto;
+  margin-right: 170px;
+  margin-top: -60px; }
+
+.circle--4 {
+  margin-top: 20px;
+  margin-left: 225px; }
+
+.circle--5 {
+  margin-left: auto;
+  margin-top: -70px; }
+
+.ejo-lead-title {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 20px; }
+
+.ejo-lead-content {
+  font-family: Butler;
+  font-size: 1rem;
+  letter-spacing: .25em;
+  color: #fff;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase; }
+  .ejo-lead-content::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 0;
+    height: 1px;
+    width: 50px;
+    background: #fff;
+    opacity: .2; }
+  .ejo-lead-content p {
+    left: 85px;
+    top: 10px;
+    position: relative; }
+
+@media (max-width: 68.74em) {
+  .ejo-lead-content {
+    left: 40px; }
+    .ejo-lead-content::before {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: block;
+      width: 25px;
+      margin-bottom: 20px; }
+    .ejo-lead-content p {
+      left: 0px;
+      top: 0px;
+      position: relative; } }
+
+/* ---------------------------------- */
+/* END SPONSORS SASS                  */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* MESSAGE SASS                       */
+/* ---------------------------------- */
+.ejo-home-message {
+  width: 100%;
+  position: absolute;
+  top: 2500px; }
+
+.ejo-message-wrapper {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 50; }
+
+.ejo-message {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 120px, 0);
+  transform: translate3d(0, 120px, 0);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.message-item {
+  margin-bottom: 120px;
+  position: relative;
+  font-size: 0;
+  z-index: 1; }
+
+.message-animation {
+  opacity: 1;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.ejo-message-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  cursor: pointer; }
+
+.message-item .ejo-message-picture {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 590px;
+  margin-right: -60px;
+  margin-left: -60px;
+  text-align: right;
+  z-index: -1; }
+
+.message-item .ejo-message-content {
+  display: inline-block;
+  width: 470px;
+  margin-top: 60px;
+  text-align: left;
+  vertical-align: top;
+  direction: ltr;
+  margin-left: -40px; }
+
+.message-item figure {
+  position: relative;
+  overflow: hidden;
+  z-index: 0; }
+  .message-item figure::before, .message-item figure::after {
+    content: '';
+    position: absolute;
+    bottom: -300px;
+    background-repeat: no-repeat;
+    pointer-events: none; }
+  .message-item figure::before {
+    left: -100px;
+    height: 750px;
+    width: 571px;
+    background-image: url("../images/ejo-rainbow.png");
+    background-position: 0 0;
+    background-size: auto 100%;
+    opacity: 0;
+    -webkit-transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1; }
+  .message-item figure::after {
+    left: 50%;
+    height: 886px;
+    width: 886px;
+    margin-left: -443px;
+    border-radius: 50%;
+    background-image: url("../images/ejo-shadow.png");
+    background-position: 50%;
+    z-index: -1; }
+  .message-item figure img {
+    max-width: 100%;
+    display: block;
+    width: 380px;
+    height: 540px;
+    opacity: 0.4; }
+
+.message-item.is--focused figure::before {
+  opacity: 0.3; }
+
+.ejo-message-glitch {
+  display: inline-block; }
+
+.message-item .ejo-message-title {
+  font-family: Butler;
+  font-size: 4.5rem;
+  letter-spacing: .05em;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 50px;
+  font-weight: 400; }
+
+.message-item .ejo-message-details {
+  margin-left: 150px; }
+
+.message-item .ejo-message-subtitle {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+  .message-item .ejo-message-subtitle::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: -30px;
+    background: #fff;
+    opacity: .2; }
+
+.message-item .ejo-message-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: Butler,Times,Georgia,serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  letter-spacing: .01em;
+  max-height: 226.1px;
+  color: #fff; }
+
+.message-item .ejo-message-button {
+  position: relative;
+  top: 45px;
+  z-index: 11;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none; }
+
+[type=button], [type=submit] {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+  outline: none;
+  background: transparent;
+  cursor: pointer; }
+
+.ejo-video {
+  margin-top: 500px;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 120px, 0);
+  transform: translate3d(0, 120px, 0);
+  -webkit-transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.ejo-video-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer; }
+  .ejo-video-container::before, .ejo-video-container::after {
+    content: '';
+    position: absolute;
+    bottom: -300px;
+    background-repeat: no-repeat;
+    pointer-events: none; }
+  .ejo-video-container::before {
+    left: -100px;
+    height: 750px;
+    width: 571px;
+    background-image: url("../images/ejo-rainbow.png");
+    background-position: 0 0;
+    background-size: auto 100%;
+    opacity: 0;
+    -webkit-transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1; }
+  .ejo-video-container::after {
+    left: 50%;
+    height: 886px;
+    width: 886px;
+    margin-left: -443px;
+    border-radius: 50%;
+    background-image: url("../images/ejo-shadow.png");
+    background-position: 50%;
+    z-index: -1; }
+  .ejo-video-container video {
+    width: 100%; }
+
+.ejo-video.video-animation {
+  opacity: 1;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.ejo-video-container.is--focused::before {
+  opacity: 0.2; }
+
+/* ---------------------------------- */
+/* END MESSAGE SASS                   */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* CALL TO ACTION SASS                */
+/* ---------------------------------- */
+.ejo-cta {
+  width: 100%;
+  position: absolute;
+  top: 3800px; }
+
+.ejo-cta-wrapper {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 50; }
+
+.ejo-cta-container {
+  width: 600px;
+  position: relative;
+  margin: 200px auto;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 120px, 0);
+  transform: translate3d(0, 80px, 0);
+  -webkit-transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.ejo-cta-container.cta-animation {
+  opacity: 1;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.ejo-cta-message {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 8px; }
+
+.ejo-cta-button {
+  z-index: 6;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #370e69;
+  text-decoration: none;
+  width: 368px;
+  margin: 0 auto; }
+  .ejo-cta-button a {
+    text-decoration: none;
+    color: #370e69;
+    font-size: 0.92rem;
+    padding: 15px 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #fff;
+    -webkit-transition: -webkit-noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: -webkit-noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: noise-anim 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-filter 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  .ejo-cta-button div {
+    width: 86px;
+    height: 50px;
+    position: absolute;
+    top: -10px;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+  .ejo-cta-button .ejo-hand-left {
+    left: 0px;
+    background: url("../images/ejo-hand-left.png") center no-repeat;
+    background-size: cover;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
+    opacity: 0.5; }
+  .ejo-cta-button .ejo-hand-right {
+    right: 0px;
+    background: url("../images/ejo-hand-right.png") center no-repeat;
+    background-size: cover;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+    opacity: 0.5; }
+
+.ejo-cta-button.is--moving div {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+/* ---------------------------------- */
+/* END CALL TO ACTION SASS            */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* FOOTER SASS                        */
+/* ---------------------------------- */
+.ejo-base-footer {
+  width: 100%;
+  position: absolute;
+  top: 3380px;
+  height: 870px; }
+  .ejo-base-footer::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 870px;
+    width: 1437px;
+    margin-left: -700px;
+    background-image: url("../images/ejo-galaxy-footer-home.png");
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+
+.ejo-base-container {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  padding: 0px 100px;
+  height: 90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.ejo-base-left {
+  position: relative; }
+  .ejo-base-left .ejo-print {
+    z-index: 50;
+    position: absolute;
+    top: -19px;
+    left: 290px; }
+    .ejo-base-left .ejo-print div {
+      background: url("../images/ejo-print.png") center no-repeat;
+      background-size: cover;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      opacity: 0.6;
+      -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      .ejo-base-left .ejo-print div:hover {
+        opacity: 1; }
+  .ejo-base-left :nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 370px; }
+  .ejo-base-left .ejo-philm {
+    z-index: 50;
+    position: absolute;
+    top: -5px;
+    left: 395px; }
+    .ejo-base-left .ejo-philm div {
+      background: url("../images/ejo-logo.png") center no-repeat;
+      background-size: cover;
+      width: 61px;
+      height: 45px;
+      position: absolute;
+      opacity: 0.6;
+      -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      .ejo-base-left .ejo-philm div:hover {
+        opacity: 1; }
+
+.ejo-base-right {
+  position: relative;
+  width: 214px; }
+  .ejo-base-right p {
+    position: absolute; }
+  .ejo-base-right a {
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    top: 1em;
+    left: 106px;
+    z-index: 50; }
+    .ejo-base-right a:hover {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .ejo-base-right :last-child {
+    left: 212px;
+    top: 0; }
+
+/* ---------------------------------- */
+/* END FOOTER SASS                    */
+/* ---------------------------------- */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,213 @@
-<!--
-<h1> {{title}} </h1>
-<a href="/about">Click  About!</a>
--->
+
+<div class="ejo-home-wrap">
+  <div class="ejo-noice"></div>
+  <!-- Landing Page -->
+  <section class="ejo-home-header">
+    <h1 class="ejo-hero-message">
+      <span class="ejo-piece vertical">
+        <span data-title="{{var}}" data-ng-repeat="var in heroMessage track by $index">{{var}}</span>
+      </span>
+    </h1>
+  </section>
+  <!-- End Landing Page -->
+
+  <!-- Sponsors -->
+  <section class="ejo-home-sponsors">
+    <div class="ejo-sponsor-wrapper">
+      <div class="ejo-sponsor-lead">
+        <p class="ejo-lead-title">{{sponsorTitle}}</p>
+        <div class="ejo-lead-content">
+          <p>{{sponsorContent}}</p>
+        </div>
+      </div>
+      <div class="ejo-circles circle--1">
+        <div class="ejo-circle">
+          <a href="http://www.filmpoolnord.se/" target="_blank">
+            <span class="ejo-hidden">filmpool nord</span>
+            <div class="ejo-circle-background"></div>
+          </a>
+        </div>
+        <div class="ejo-circle circle--2">
+          <a href="https://www.swedbank.se/" target="_blank">
+            <span class="ejo-hidden"></span>
+            <div class="ejo-circle-background"></div>
+          </a>
+        </div>
+        <div class="ejo-circle circle--3">
+          <a href="/">
+            <span class="ejo-hidden"></span>
+          </a>
+        </div>
+        <div class="ejo-circle circle--4">
+          <a href="/">
+            <span class="ejo-hidden"></span>
+          </a>
+        </div>
+        <div class="ejo-circle circle--5">
+          <a href="/">
+            <span class="ejo-hidden"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Sponsors-->
+
+  <!-- Message -->
+  <section class="ejo-home-message">
+    <div class="ejo-message-wrapper">
+      <div class="ejo-message message-item">
+        <a class="ejo-message-link" href="/about"></a>
+        <div class="ejo-message-picture">
+          <figure class="ejo-message-glitch">
+            <img src="/images/ejo-temp.jpg" alt="phlimfestivalen" />
+          </figure>
+        </div>
+        <div class="ejo-message-content">
+          <h3 class="ejo-message-title">{{messageTitle}}</h3>
+          <div class="ejo-message-details">
+            <p class="ejo-message-subtitle">{{messageSubTitle}}</p>
+            <p class="ejo-message-text">{{messageText}}</p>
+            <a href="/about" class="ejo-message-button" type="button" layout="transparent">More Details +</a>
+          </div>
+        </div>
+      </div>
+      <div class="ejo-video message-item">
+        <div class="ejo-video-container">
+          <video src="/images/ejo-video.mp4" audio="false" autoplay loop></video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Message -->
+
+  <!-- Call To Action -->
+  <section class="ejo-cta">
+    <div class="ejo-cta-wrapper">
+      <div class="ejo-cta-container">
+        <!--<div class="ejo-cta-logo"></div>-->
+        <!--<p class="ejo-cta-message">{{ctaMessage}}</p>-->
+        <div class="ejo-cta-button">
+          <div class="ejo-hand-left"></div>
+          <a href="/compete">
+            <span>Join the competition</span>
+          </a>
+          <div class="ejo-hand-right"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Call To Action -->
+
+</div>
+<script type="text/javascript">
+  (function($, window, document, undefined) {
+
+    //Variables
+    var piece = $('.ejo-piece'),
+        circle = $('.ejo-circle'),
+        WebGL = $('.ejo-WebGL'),
+        messageLink = $('.ejo-message-link'),
+        video = $('.ejo-video-container'),
+        ctaButton = $('.ejo-cta-button'),
+        animateEnter = $('.animate-enter'),
+        ejoPiece = $('.ejo-piece');
+
+    //Events
+    function circleAnim(e) {
+      $(this).toggleClass('is--hovered');
+    }
+
+    function messageAnim(e) {
+      $(this).parent().toggleClass('is--focused');
+    }
+
+    function videoAnim(e) {
+      $(this).toggleClass('is--focused');
+    }
+
+    //Function Glitch
+    function glitch() {
+      piece.addClass('is-glitched');
+      setTimeout(function() {
+        piece.removeClass('is-glitched');
+      }, 300);
+    }
+
+    //Function Hands
+    function hands() {
+      ctaButton.addClass('is--moving');
+      setTimeout(function() {
+        ctaButton.removeClass('is--moving');
+      }, 300);
+    }
+
+    //Self-invoking Function Loops
+    (function loop() {
+      var rand = Math.floor(Math.random() * (7000-3000)) + 3000;
+      console.log(rand);
+      setTimeout(function() {
+        glitch();
+        loop();
+      }, rand);
+    })();
+
+    (function loopHands() {
+      setTimeout(function() {
+        hands();
+        loopHands();
+      }, 1000);
+    })();
+
+    (function letters(enu) {
+      if(ejoPiece.children().length == 15 && enu < 15) {
+        setTimeout(function () {
+          ejoPiece.children().eq(enu).addClass('is--showing');
+          letters(++enu);
+        }, 180 + 10 * enu);
+      } else if (enu == 15) {
+      } else {
+        setTimeout(function () {
+          letters(0);
+        }, 20);
+      }
+    })();
+
+    //Event Handler
+    circle.on('mouseenter mouseleave', circleAnim);
+    messageLink.on('mouseenter mouseleave', messageAnim);
+    video.on('mouseenter mouseleave', videoAnim);
+
+    //"Parallax Scrolling" Event Handler
+    $(window).on('scroll', function(e) {
+      var self = $(this),
+          wScroll = self.scrollTop(),
+          ejoButton = $('.ejo-button'),
+          ejoTitle = $('.ejo-lead-title'),
+          ejoContent = $('.ejo-lead-content'),
+          ejoEvent = $('.ejo-event'),
+          ejoCircle = $('.ejo-circle'),
+          ejoMessage = $('.ejo-message'),
+          ejoVideo = $('.ejo-video'),
+          ejoCta = $('.ejo-cta-container');
+
+      ejoButton.css({ 'transform' : 'translate(0px, -' + wScroll / 2 + '%)' });
+      ejoTitle.css({ 'transform' : 'translate(0px, -' + wScroll / 2 + '%)' });
+      ejoContent.css({ 'transform' : 'translate(0px, -' + wScroll / 18 + '%)' });
+      ejoEvent.css({ 'transform' : 'translate(0px, -' + wScroll / 2 + '%)' });
+      ejoCircle.css({ 'transform' : 'translate(0px, -' + wScroll / 40 + '%)' });
+      ejoVideo.css({ 'transform' : 'translate(0px, -' + wScroll / 40 + '%)' });
+      ejoCta.css({ 'transform' : 'translate(0px, -' + wScroll / 4 + '%)' });
+
+      if(wScroll > 1900) {
+        ejoMessage.addClass('message-animation');
+      } if(wScroll > 2650) {
+        ejoVideo.addClass('video-animation');
+      } if(wScroll > 3200) {
+        ejoCta.addClass('cta-animation');
+      }
+
+    });
+
+  })(jQuery, window, document);
+</script>

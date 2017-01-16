@@ -8,7 +8,7 @@ require.config({
 
   paths: {
 
-    // Paths to https CDN content - with static fallback in Bower
+    // Paths to https CDN content - with static fallback in Bower & Core
     'angular': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min', '/static/angular/angular.min'],
     'jquery': ['https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min', '/static/jquery/dist/jquery.min'],
     'angular-route': ['https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min', '/static/angular-route/angular-route.min'],
@@ -17,7 +17,8 @@ require.config({
     'three': ['https://ajax.googleapis.com/ajax/libs/threejs/r76/three.min', '/static/three.js/build/three.min'],
 
     'threeConf': ['/components/javascripts/core/threeConf'],
-
+    'modernizr': ['/components/javascripts/core/modernizr.min'],
+    'lettering': ['/components/javascripts/core/lettering'],
     // Load the modules
     'coreModule': '/components/javascripts/core/coreModule',
     'themeModule': '/components/javascripts/theme/themeModule'
@@ -42,12 +43,16 @@ require.config({
       'deps': [ 'jquery' ]
     },
 
+    'modernizr': {
+      'deps': [ 'jquery' ]
+    },
+
     'themeModule': {
       'deps': [ 'angular-route' ]
     },
 
     'coreModule': {
-      'deps': [ 'angular-route', 'angular-animate', 'themeModule', 'preload', 'three', 'threeConf' ]
+      'deps': [ 'angular-route', 'angular-animate', 'themeModule', 'preload', 'three', 'threeConf', 'modernizr', 'lettering' ]
     }
 
   }
