@@ -1,0 +1,6 @@
+{
+	"name": "Philmfestivalen",
+	"description": "A Node.js app configured in a MEAN environment",
+	"repository": "https://github.com/GREY-Studio/Philmfestivalen",
+	"keywords": ["node", "express", "static"]
+}
