@@ -346,7 +346,7 @@ header.ejo-header {
   width: 100%;
   top: 50px;
   left: 0;
-  z-index: 3;
+  z-index: 12;
   pointer-events: auto; }
 
 .ejo-header-con {
@@ -567,131 +567,131 @@ header.ejo-header {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(45px, 9999px, 61px, 0); }
+    clip: rect(2px, 9999px, 46px, 0); }
   3.33333% {
-    clip: rect(43px, 9999px, 37px, 0); }
+    clip: rect(79px, 9999px, 99px, 0); }
   6.66667% {
-    clip: rect(6px, 9999px, 27px, 0); }
+    clip: rect(60px, 9999px, 80px, 0); }
   10% {
-    clip: rect(16px, 9999px, 1px, 0); }
+    clip: rect(22px, 9999px, 78px, 0); }
   13.33333% {
-    clip: rect(39px, 9999px, 85px, 0); }
+    clip: rect(10px, 9999px, 61px, 0); }
   16.66667% {
-    clip: rect(23px, 9999px, 51px, 0); }
+    clip: rect(10px, 9999px, 87px, 0); }
   20% {
-    clip: rect(98px, 9999px, 25px, 0); }
+    clip: rect(47px, 9999px, 92px, 0); }
   23.33333% {
-    clip: rect(81px, 9999px, 75px, 0); }
+    clip: rect(85px, 9999px, 63px, 0); }
   26.66667% {
-    clip: rect(78px, 9999px, 11px, 0); }
+    clip: rect(58px, 9999px, 9px, 0); }
   30% {
-    clip: rect(27px, 9999px, 95px, 0); }
+    clip: rect(8px, 9999px, 22px, 0); }
   33.33333% {
-    clip: rect(59px, 9999px, 45px, 0); }
+    clip: rect(75px, 9999px, 45px, 0); }
   36.66667% {
-    clip: rect(18px, 9999px, 38px, 0); }
+    clip: rect(10px, 9999px, 95px, 0); }
   40% {
-    clip: rect(25px, 9999px, 99px, 0); }
+    clip: rect(39px, 9999px, 50px, 0); }
   43.33333% {
-    clip: rect(95px, 9999px, 46px, 0); }
+    clip: rect(32px, 9999px, 58px, 0); }
   46.66667% {
-    clip: rect(26px, 9999px, 85px, 0); }
+    clip: rect(19px, 9999px, 46px, 0); }
   50% {
-    clip: rect(58px, 9999px, 18px, 0); }
+    clip: rect(33px, 9999px, 9px, 0); }
   53.33333% {
-    clip: rect(28px, 9999px, 60px, 0); }
+    clip: rect(72px, 9999px, 3px, 0); }
   56.66667% {
-    clip: rect(90px, 9999px, 82px, 0); }
+    clip: rect(68px, 9999px, 19px, 0); }
   60% {
-    clip: rect(44px, 9999px, 43px, 0); }
+    clip: rect(74px, 9999px, 45px, 0); }
   63.33333% {
-    clip: rect(90px, 9999px, 99px, 0); }
+    clip: rect(38px, 9999px, 66px, 0); }
   66.66667% {
-    clip: rect(44px, 9999px, 92px, 0); }
+    clip: rect(90px, 9999px, 41px, 0); }
   70% {
-    clip: rect(66px, 9999px, 27px, 0); }
+    clip: rect(96px, 9999px, 59px, 0); }
   73.33333% {
-    clip: rect(59px, 9999px, 30px, 0); }
+    clip: rect(2px, 9999px, 60px, 0); }
   76.66667% {
-    clip: rect(86px, 9999px, 29px, 0); }
+    clip: rect(30px, 9999px, 75px, 0); }
   80% {
-    clip: rect(73px, 9999px, 13px, 0); }
+    clip: rect(47px, 9999px, 49px, 0); }
   83.33333% {
-    clip: rect(17px, 9999px, 48px, 0); }
+    clip: rect(9px, 9999px, 62px, 0); }
   86.66667% {
-    clip: rect(96px, 9999px, 30px, 0); }
+    clip: rect(80px, 9999px, 39px, 0); }
   90% {
-    clip: rect(87px, 9999px, 34px, 0); }
+    clip: rect(83px, 9999px, 86px, 0); }
   93.33333% {
-    clip: rect(70px, 9999px, 20px, 0); }
+    clip: rect(90px, 9999px, 6px, 0); }
   96.66667% {
-    clip: rect(71px, 9999px, 87px, 0); }
+    clip: rect(10px, 9999px, 73px, 0); }
   100% {
-    clip: rect(25px, 9999px, 46px, 0); } }
+    clip: rect(53px, 9999px, 29px, 0); } }
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(36px, 9999px, 10px, 0); }
+    clip: rect(8px, 9999px, 14px, 0); }
   3.33333% {
-    clip: rect(16px, 9999px, 63px, 0); }
+    clip: rect(56px, 9999px, 41px, 0); }
   6.66667% {
-    clip: rect(7px, 9999px, 18px, 0); }
+    clip: rect(97px, 9999px, 58px, 0); }
   10% {
-    clip: rect(53px, 9999px, 73px, 0); }
+    clip: rect(29px, 9999px, 52px, 0); }
   13.33333% {
-    clip: rect(57px, 9999px, 1px, 0); }
+    clip: rect(79px, 9999px, 41px, 0); }
   16.66667% {
-    clip: rect(88px, 9999px, 28px, 0); }
+    clip: rect(95px, 9999px, 90px, 0); }
   20% {
-    clip: rect(93px, 9999px, 3px, 0); }
+    clip: rect(25px, 9999px, 63px, 0); }
   23.33333% {
-    clip: rect(19px, 9999px, 69px, 0); }
+    clip: rect(8px, 9999px, 42px, 0); }
   26.66667% {
-    clip: rect(51px, 9999px, 52px, 0); }
+    clip: rect(81px, 9999px, 41px, 0); }
   30% {
-    clip: rect(13px, 9999px, 21px, 0); }
+    clip: rect(81px, 9999px, 47px, 0); }
   33.33333% {
-    clip: rect(23px, 9999px, 79px, 0); }
+    clip: rect(32px, 9999px, 86px, 0); }
   36.66667% {
-    clip: rect(18px, 9999px, 93px, 0); }
+    clip: rect(43px, 9999px, 47px, 0); }
   40% {
-    clip: rect(55px, 9999px, 6px, 0); }
+    clip: rect(87px, 9999px, 83px, 0); }
   43.33333% {
-    clip: rect(22px, 9999px, 27px, 0); }
+    clip: rect(15px, 9999px, 78px, 0); }
   46.66667% {
-    clip: rect(25px, 9999px, 48px, 0); }
+    clip: rect(44px, 9999px, 35px, 0); }
   50% {
-    clip: rect(84px, 9999px, 30px, 0); }
+    clip: rect(62px, 9999px, 35px, 0); }
   53.33333% {
-    clip: rect(96px, 9999px, 97px, 0); }
+    clip: rect(66px, 9999px, 79px, 0); }
   56.66667% {
-    clip: rect(97px, 9999px, 70px, 0); }
+    clip: rect(76px, 9999px, 37px, 0); }
   60% {
-    clip: rect(37px, 9999px, 28px, 0); }
+    clip: rect(96px, 9999px, 54px, 0); }
   63.33333% {
-    clip: rect(18px, 9999px, 69px, 0); }
+    clip: rect(95px, 9999px, 40px, 0); }
   66.66667% {
-    clip: rect(58px, 9999px, 28px, 0); }
+    clip: rect(97px, 9999px, 34px, 0); }
   70% {
-    clip: rect(12px, 9999px, 78px, 0); }
+    clip: rect(41px, 9999px, 46px, 0); }
   73.33333% {
-    clip: rect(32px, 9999px, 49px, 0); }
+    clip: rect(40px, 9999px, 76px, 0); }
   76.66667% {
-    clip: rect(25px, 9999px, 28px, 0); }
+    clip: rect(27px, 9999px, 24px, 0); }
   80% {
-    clip: rect(34px, 9999px, 65px, 0); }
+    clip: rect(86px, 9999px, 53px, 0); }
   83.33333% {
-    clip: rect(85px, 9999px, 8px, 0); }
+    clip: rect(52px, 9999px, 97px, 0); }
   86.66667% {
-    clip: rect(25px, 9999px, 61px, 0); }
+    clip: rect(49px, 9999px, 79px, 0); }
   90% {
-    clip: rect(25px, 9999px, 67px, 0); }
+    clip: rect(28px, 9999px, 89px, 0); }
   93.33333% {
-    clip: rect(16px, 9999px, 8px, 0); }
+    clip: rect(75px, 9999px, 58px, 0); }
   96.66667% {
-    clip: rect(95px, 9999px, 84px, 0); }
+    clip: rect(24px, 9999px, 67px, 0); }
   100% {
-    clip: rect(59px, 9999px, 93px, 0); } }
+    clip: rect(48px, 9999px, 74px, 0); } }
 
 .ejo-mini-message {
   font-family: opensans-l;
@@ -1222,9 +1222,9 @@ header.ejo-header {
   z-index: 50; }
 
 .ejo-cta-container {
-  width: 600px;
+  width: 645px;
   position: relative;
-  margin: 200px auto;
+  margin: 190px auto;
   opacity: 0;
   -webkit-transform: translate3d(0, 120px, 0);
   transform: translate3d(0, 80px, 0);
@@ -1294,6 +1294,32 @@ header.ejo-header {
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
 
+.ejo-cta-text {
+  text-align: center; }
+  .ejo-cta-text a {
+    text-decoration: none;
+    font-family: Butler;
+    font-size: 4rem;
+    letter-spacing: .05em;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 50px;
+    font-weight: 400; }
+
+.ejo-cta-text-line {
+  position: absolute;
+  background: #fff;
+  width: 0%;
+  height: 5px;
+  top: 50%;
+  margin-top: -2.5px;
+  z-index: -1;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+.ejo-cta-container.cta--is--hovered .ejo-cta-text-line {
+  width: 100%; }
+
 /* ---------------------------------- */
 /* END CALL TO ACTION SASS            */
 /* ---------------------------------- */
@@ -1349,11 +1375,12 @@ header.ejo-header {
     top: -19px;
     left: 290px; }
     .ejo-base-left .ejo-print div {
-      background: url("../images/ejo-print.png") center no-repeat;
-      background-size: cover;
-      width: 70px;
-      height: 70px;
+      top: 30px;
+      left: 4px;
+      color: #fff;
+      text-decoration: none;
       position: absolute;
+      font-weight: 900;
       opacity: 0.6;
       -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
@@ -1362,18 +1389,18 @@ header.ejo-header {
   .ejo-base-left :nth-child(3) {
     position: absolute;
     top: 0;
-    left: 370px; }
+    left: 352px; }
   .ejo-base-left .ejo-philm {
     z-index: 50;
     position: absolute;
     top: -5px;
-    left: 395px; }
+    left: 375px; }
     .ejo-base-left .ejo-philm div {
-      background: url("../images/ejo-logo.png") center no-repeat;
-      background-size: cover;
-      width: 61px;
-      height: 45px;
       position: absolute;
+      top: 16px;
+      text-decoration: none;
+      font-weight: 900;
+      color: #fff;
       opacity: 0.6;
       -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
@@ -1402,6 +1429,124 @@ header.ejo-header {
 
 /* ---------------------------------- */
 /* END FOOTER SASS                    */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* LOGIN SASS                         */
+/* ---------------------------------- */
+.ejo-login {
+  width: 400px;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: #7056A8;
+  z-index: 10;
+  -webkit-transform: translate3d(400px, 0, 0);
+  transform: translate3d(400px, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: center; }
+
+.is--displayed .ejo-login {
+  -webkit-transform: translate3d(380px, 0, 0);
+  transform: translate3d(380px, 0, 0); }
+
+.is--displayed--clicked .ejo-login {
+  -webkit-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0); }
+
+.is--displayed--clicked .ejo-views, .is--displayed--clicked .ejo-footer, .is--displayed--clicked .ejo-base-footer {
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+  opacity: 0.2; }
+
+.ejo-views {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.ejo-footer {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.ejo-base-footer {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.ejo-form {
+  width: 300px;
+  position: absolute;
+  top: 200px; }
+  .ejo-form .ejo-form-user, .ejo-form .ejo-form-pass {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0px; }
+  .ejo-form input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 250px;
+    line-height: 2;
+    color: #fff;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding-left: 10px;
+    right: 0;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none; }
+    .ejo-form input:focus {
+      outline: none;
+      color: #fff; }
+  .ejo-form .ejo-form-user-ico {
+    background: url("../images/ejo-fuser.svg") no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 21px;
+    margin-top: 8px;
+    opacity: 0.7; }
+  .ejo-form .ejo-form-pass-ico {
+    background: url("../images/ejo-lock.svg") no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    margin-top: 7px;
+    opacity: 0.7; }
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+.ejo-form .ejo-button {
+  right: 0;
+  top: 140px; }
+  .ejo-form .ejo-button a {
+    padding: 10px 53px; }
+
+/* ---------------------------------- */
+/* END LOGIN SASS                     */
 /* ---------------------------------- */
 
 /*# sourceMappingURL=style.css.map */

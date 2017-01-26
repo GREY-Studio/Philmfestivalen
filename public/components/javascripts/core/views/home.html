@@ -87,12 +87,18 @@
       <div class="ejo-cta-container">
         <!--<div class="ejo-cta-logo"></div>-->
         <!--<p class="ejo-cta-message">{{ctaMessage}}</p>-->
-        <div class="ejo-cta-button">
+        <!--<div class="ejo-cta-button">
           <div class="ejo-hand-left"></div>
           <a href="/compete">
             <span>Join the competition</span>
           </a>
           <div class="ejo-hand-right"></div>
+        </div>-->
+        <div class="ejo-cta-text">
+          <a href="/compete">
+            {{ctaMessage}}
+          </a>
+          <div class="ejo-cta-text-line"></div>
         </div>
       </div>
     </div>
@@ -111,7 +117,11 @@
         video = $('.ejo-video-container'),
         ctaButton = $('.ejo-cta-button'),
         animateEnter = $('.animate-enter'),
-        ejoPiece = $('.ejo-piece');
+        ejoPiece = $('.ejo-piece'),
+        ejoNav = $('.ejo-navigation ul'),
+        body = $('body'),
+        logContainer = $('.ejo-login'),
+        ejoCta = $('.ejo-cta-container');
 
     //Events
     function circleAnim(e) {
@@ -124,6 +134,18 @@
 
     function videoAnim(e) {
       $(this).toggleClass('is--focused');
+    }
+
+    function navAnim(e) {
+      body.toggleClass('is--displayed');
+    }
+
+    function navAnimClicked(e) {
+      body.toggleClass('is--displayed--clicked');
+    }
+
+    function ctaAnim(e) {
+      $(this).toggleClass('cta--is--hovered');
     }
 
     //Function Glitch
@@ -177,6 +199,11 @@
     circle.on('mouseenter mouseleave', circleAnim);
     messageLink.on('mouseenter mouseleave', messageAnim);
     video.on('mouseenter mouseleave', videoAnim);
+    ejoNav.children().last().on('mouseenter mouseleave', navAnim).on('click', navAnimClicked);
+    ejoCta.on('mouseenter mouseleave', ctaAnim);
+    logContainer.on('mouseleave', function(e) {
+      body.removeClass('is--displayed--clicked');
+    });
 
     //"Parallax Scrolling" Event Handler
     $(window).on('scroll', function(e) {
@@ -188,8 +215,7 @@
           ejoEvent = $('.ejo-event'),
           ejoCircle = $('.ejo-circle'),
           ejoMessage = $('.ejo-message'),
-          ejoVideo = $('.ejo-video'),
-          ejoCta = $('.ejo-cta-container');
+          ejoVideo = $('.ejo-video');
 
       ejoButton.css({ 'transform' : 'translate(0px, -' + wScroll / 2 + '%)' });
       ejoTitle.css({ 'transform' : 'translate(0px, -' + wScroll / 2 + '%)' });
@@ -197,7 +223,7 @@
       ejoEvent.css({ 'transform' : 'translate(0px, -' + wScroll / 2 + '%)' });
       ejoCircle.css({ 'transform' : 'translate(0px, -' + wScroll / 40 + '%)' });
       ejoVideo.css({ 'transform' : 'translate(0px, -' + wScroll / 40 + '%)' });
-      ejoCta.css({ 'transform' : 'translate(0px, -' + wScroll / 4 + '%)' });
+      ejoCta.css({ 'transform' : 'translate(0px, -' + wScroll / 18 + '%)' });
 
       if(wScroll > 1900) {
         ejoMessage.addClass('message-animation');

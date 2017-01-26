@@ -375,7 +375,7 @@ header.ejo-header
   width: 100%
   top: 50px
   left: 0
-  z-index: 3
+  z-index: 12
   pointer-events: auto
 
 .ejo-header-con
@@ -1214,9 +1214,9 @@ header.ejo-header
   z-index: 50
 
 .ejo-cta-container
-  width: 600px
+  width: 645px
   position: relative
-  margin: 200px auto
+  margin: 190px auto
   opacity: 0
   -webkit-transform: translate3d(0,120px,0)
   transform: translate3d(0,80px,0)
@@ -1291,6 +1291,33 @@ header.ejo-header
   -webkit-transform: translateZ(0)
   transform: translateZ(0)
 
+.ejo-cta-text
+  text-align: center
+
+  a
+    text-decoration: none
+    font-family: Butler
+    font-size: 4rem
+    letter-spacing: .05em
+    color: $secondary
+    line-height: 1
+    margin-bottom: 50px
+    font-weight: 400
+
+.ejo-cta-text-line
+  position: absolute
+  background: $secondary
+  width: 0%
+  height: 5px
+  top: 50%
+  margin-top: -2.5px
+  z-index: -1
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+.ejo-cta-container.cta--is--hovered .ejo-cta-text-line
+  width: 100%
+
 /* ---------------------------------- */
 /* END CALL TO ACTION SASS            */
 /* ---------------------------------- */
@@ -1351,11 +1378,16 @@ header.ejo-header
     left: 290px
 
     div
-      background: url('../images/ejo-print.png') center no-repeat
-      background-size: cover
-      width: 70px
-      height: 70px
+      //background: url('../images/ejo-print.png') center no-repeat
+      //background-size: cover
+      top: 30px
+      left: 4px
+      color: $secondary
+      text-decoration: none
+      //width: 70px
+      //height: 70px
       position: absolute
+      font-weight: 900
       opacity: 0.6
       -webkit-transition: opacity 0.6s cubic-bezier(.165,.84,.44,1)
       transition: opacity 0.6s cubic-bezier(.165,.84,.44,1)
@@ -1366,20 +1398,24 @@ header.ejo-header
   :nth-child(3)
     position: absolute
     top: 0
-    left: 370px
+    left: 352px
 
   .ejo-philm
     z-index: 50
     position: absolute
     top: -5px
-    left: 395px
+    left: 375px
 
     div
-      background: url('../images/ejo-logo.png') center no-repeat
-      background-size: cover
-      width: 61px
-      height: 45px
+      //background: url('../images/ejo-logo.png') center no-repeat
+      //background-size: cover
+      //width: 61px
+      //height: 45px
       position: absolute
+      top: 16px
+      text-decoration: none
+      font-weight: 900
+      color: $secondary
       opacity: 0.6
       -webkit-transition: opacity 0.6s cubic-bezier(.165,.84,.44,1)
       transition: opacity 0.6s cubic-bezier(.165,.84,.44,1)
@@ -1413,4 +1449,132 @@ header.ejo-header
 
 /* ---------------------------------- */
 /* END FOOTER SASS                    */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* LOGIN SASS                         */
+/* ---------------------------------- */
+
+.ejo-login
+  width: 400px
+  position: fixed
+  height: 100%
+  right: 0
+  top: 0
+  background: $purple
+  z-index: 10
+  -webkit-transform: translate3d(400px,0,0)
+  transform: translate3d(400px,0,0)
+  -webkit-transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+  transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -webkit-justify-content: center
+  -ms-flex-pack: justify
+  justify-content: center
+
+.is--displayed .ejo-login
+  -webkit-transform: translate3d(380px,0,0)
+  transform: translate3d(380px,0,0)
+
+.is--displayed--clicked .ejo-login
+  -webkit-transform: translate3d(0px,0,0)
+  transform: translate3d(0px,0,0)
+
+.is--displayed--clicked .ejo-views, .is--displayed--clicked .ejo-footer, .is--displayed--clicked .ejo-base-footer
+  -webkit-transform: translate3d(-40px,0,0)
+  transform: translate3d(-40px,0,0)
+  opacity: 0.2
+
+.ejo-views
+  -webkit-transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+  transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+
+.ejo-footer
+  -webkit-transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+  transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+
+.ejo-base-footer
+  -webkit-transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+  transition: all 0.6s cubic-bezier(.165,.84,.44,1)
+
+.ejo-form
+  width: 300px
+  position: absolute
+  top: 200px
+
+  .ejo-form-user, .ejo-form-pass
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    padding: 10px 0px
+
+  input
+    background: none
+    border: none
+    border-bottom: 1px solid $temp-text
+    width: 250px
+    line-height: 2
+    color: $secondary
+    font-family: proxima-nova, sans-serif
+    font-style: normal
+    font-size: 0.92rem
+    font-weight: 600
+    padding-left: 10px
+    right: 0
+    appearance: none
+    box-shadow: none
+    border-radius: none
+
+    &:focus
+      outline: none
+      color: $secondary
+
+  .ejo-form-user-ico
+    background: url('../images/ejo-fuser.svg') no-repeat
+    background-size: cover
+    width: 21px
+    height: 21px
+    margin-top: 8px
+    opacity: 0.7
+
+  .ejo-form-pass-ico
+    background: url('../images/ejo-lock.svg') no-repeat
+    background-size: cover
+    width: 22px
+    height: 22px
+    margin-top: 7px
+    opacity: 0.7
+
+::-webkit-input-placeholder
+  color: $temp-text
+
+:-moz-placeholder
+  color: $temp-text
+
+::-moz-placeholder
+  color: $temp-text
+
+:-ms-input-placeholder
+  color: $temp-text
+
+.ejo-form .ejo-button
+  right: 0
+  top: 140px
+
+  a
+    padding: 10px 53px
+
+
+
+/* ---------------------------------- */
+/* END LOGIN SASS                     */
 /* ---------------------------------- */

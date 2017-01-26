@@ -31,7 +31,7 @@ define(function() {
       $scope.messageTitle = "Capture your imagination",
       $scope.messageSubTitle = "What is Philmfestivalen?",
       $scope.messageText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Dolor sit amet, consectetur...",
-      $scope.ctaMessage = "Join the competition!"
+      $scope.ctaMessage = "join the competition"
     }]);
 
 });
