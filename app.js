@@ -10,13 +10,13 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 
 // [SH] Bring in the data model
-require('./authorization/models/ejo-storage');
+//require('./authorization/models/ejo-storage');
 
 // Bring in the passport config after the model is defined
-require('./authorization/config/passport');
+//require('./authorization/config/passport');
 
 // [SH] Bring in the routes for the API (delete the default routes)
-var Rapi = require('./authorization/routes/index');
+//var Rapi = require('./authorization/routes/index');
 
 var app = express();
 
@@ -38,15 +38,15 @@ app.use(require('node-sass-middleware')({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api', Rapi);
+//app.use('/api', Rapi);
 
 // [SH] Initialise Passport before using the route middleware
-app.use(passport.initialize());
+//app.use(passport.initialize());
 
 // Back-End URI
-app.get('/sign', function(request, response) {
+/*app.get('/sign', function(request, response) {
   response.status(200).send("<h1>Working!</h1>");
-});
+});*/
 
 // serve static content in Bower to uri extension /static API
 app.use('/static', express.static(__dirname + '/bower_components'));

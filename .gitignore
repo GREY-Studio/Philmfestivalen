@@ -111,3 +111,5 @@ $RECYCLE.BIN/
 
 # node modules #
 /node_modules/*
+
+/authorization/*
