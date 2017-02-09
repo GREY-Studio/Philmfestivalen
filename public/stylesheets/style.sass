@@ -428,12 +428,16 @@ header.ejo-header
         padding: 1.4375rem 1.5625rem
         text-decoration: none
         font-size: 0.92rem
+        color: $secondary
 
         span
           font-family: proxima-nova, sans-serif
           font-style: normal
           font-weight: 600
           color: $secondary
+
+        &:hover
+          //text-decoration: underline
 
       /*&:last-child
         background: $yellow
@@ -879,6 +883,14 @@ header.ejo-header
   margin-left: auto
   margin-right: 170px
   margin-top: -60px
+
+  .ejo-circle-background
+    background: url('../images/ejo-PRINT-W.png')
+    background-size: cover
+    width: 90px
+    height: 90px
+    margin: -45px auto
+    opacity: 0.75
 
 .circle--4
   margin-top: 20px
@@ -1425,7 +1437,7 @@ header.ejo-header
 
 .ejo-base-right
   position: relative
-  width: 214px
+  width: 275px
 
   p
     position: absolute
@@ -1437,14 +1449,14 @@ header.ejo-header
     position: relative
     text-decoration: none
     top: 1em
-    left: 106px
+    left: 164px
     z-index: 50
 
     &:hover
       border-bottom: 1px solid $temp-text
 
   :last-child
-    left: 212px
+    left: 270px
     top: 0
 
 /* ---------------------------------- */
@@ -1573,6 +1585,35 @@ header.ejo-header
   a
     padding: 10px 53px
 
+.ejo-register
+  font-family: proxima-nova, sans-serif
+  font-style: normal
+  font-weight: 600
+  color: $temp-text
+  text-decoration: none
+  font-size: 0.87rem
+  position: absolute
+  bottom: 45px
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  width: 300px
+
+  p
+    margin: 0
+
+  a
+    text-decoration: none
+    top: 5px
+    color: $secondary
+
+    &:hover
+      text-decoration: underline
 
 
 /* ---------------------------------- */
